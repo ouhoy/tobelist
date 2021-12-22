@@ -7,6 +7,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.grey {
+  color: #AAAAAA;
+}
+
 button {
   outline: none;
   border: none;
@@ -41,6 +45,14 @@ h2 {
   font-size: 58px;
   line-height: 77px;
   text-align: center;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 43px;
 }
 
 .container {
@@ -99,6 +111,10 @@ h2 {
 
 .blue-and {
   color: #195BFF;
+}
+
+.background-blue {
+  background-color: #195BFF;
 }
 
 nav {
@@ -160,5 +176,250 @@ header {
 
 header h1 {
   margin: 108px;
+}
+
+.features-section {
+  margin: 0 auto;
+}
+
+.features-section h2 {
+  margin-bottom: 120px;
+}
+
+.features-section .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.features-section .cards .card {
+  width: 580px;
+  height: 545px;
+  margin-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+.features-section .cards .card h3 {
+  width: 295px;
+  text-align: center;
+  margin: 23px 0;
+}
+
+.features-section .cards .card p {
+  color: #AAAAAA;
+  font-weight: 400;
+  width: 380px;
+}
+
+.reviews-section .reviews {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-auto-columns: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 120px auto;
+}
+
+.reviews-section .reviews .user-review {
+  width: 624px;
+  height: 370px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews-section .reviews .user-review p {
+  text-align: left;
+}
+
+.reviews-section .reviews .user-review .user {
+  width: 287px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.reviews-section .reviews .user-review .user p {
+  margin: 0 12px;
+}
+
+.reviews-section .reviews .user-review p {
+  width: 532px;
+}
+
+.reviews-section .reviews .slider-buttons {
+  margin: 52px auto;
+  width: 100%;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.reviews-section .reviews .slider-buttons .lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews-section .reviews .slider-buttons .lines .line {
+  width: 45px;
+  height: 6px;
+  background-color: #AAAAAA;
+  margin: 0 12px;
+}
+
+.reviews-section .reviews .slider-buttons .butttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cta-section h1 {
+  font-size: 64px;
+  margin: 65px 0;
+}
+
+.cta-section a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta-section a img {
+  margin-left: 5px;
+}
+
+.faq {
+  margin: 200px auto;
+}
+
+.faq h2 {
+  margin-bottom: 58px;
+}
+
+.faq .questions {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.faq .questions .question {
+  margin: 13px auto;
+  width: 890px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid rgba(224, 224, 224, 0.47);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.faq .questions .question .plus {
+  position: relative;
+}
+
+.faq .questions .question .plus .line:first-of-type {
+  position: absolute;
+  background-color: #195BFF;
+  width: 3px;
+  height: 20px;
+  border-radius: 3px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.faq .questions .question .plus .line {
+  background-color: #195BFF;
+  width: 3px;
+  height: 20px;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=main.css.map */

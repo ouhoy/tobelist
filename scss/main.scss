@@ -10,6 +10,9 @@ $body-02: 16px;
 body {
     font-family: 'Poppins', sans-serif;
 }
+.grey {
+    color: $gray;
+}
 button {
     outline: none;
     border: none;
@@ -42,6 +45,13 @@ h1 {
     font-size: 58px;
     line-height: 77px;
     text-align: center
+ }
+ h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 43px;
  }
  .container {
      max-width: 1280px;
@@ -93,6 +103,10 @@ h1 {
      color: $primary;
  }
 
+.background-blue {
+    background-color: $primary;
+}
+
 nav {
     height: 90px;
     width: 100%;
@@ -130,4 +144,166 @@ header {
      margin: 108px;
  }
 
+}
+.features-section {
+    margin: 0 auto;
+       h2 {
+            margin-bottom: 120px;
+        }
+    .cards {
+     
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+        .card {
+            width: 580px;
+            height: 545px;
+            margin-bottom: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: $border-radius;
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+            h3 {
+                width: 295px;
+                text-align: center;
+                margin: 23px 0;
+            }
+            p {
+                color: $gray;
+                font-weight: 400;
+                width: 380px;
+            }
+        }
+    }
+}
+.reviews-section {
+
+    .reviews {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-auto-columns: auto;
+        justify-content: space-between;
+        margin: 120px auto;
+        .user-review {
+            p {
+                text-align: left;
+            }
+            // padding: 30px;
+            width: 624px;
+            height: 370px;
+            background: white;
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+            border-radius: $border-radius;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .user {
+                width: 287px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 40px;
+                p {
+                    margin: 0 12px;
+                }
+            }
+            p {
+                width: 532px;
+            }
+        }
+        .slider-buttons {
+            margin: 52px auto;
+            width: 100%;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            .lines {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .line {
+                    width: 45px;
+                    height: 6px;
+                    background-color: $gray;
+                    margin: 0 12px;
+                }
+             
+            }
+            .butttons {
+               display: flex;
+               justify-content: flex-end; 
+               align-items: center;    
+            }
+        }
+    }
+}
+.cta-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h1 {
+        font-size: 64px;
+        margin: 65px 0;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        img {
+            margin-left: 5px;
+        }
+
+    }
+}
+.faq {
+ 
+    margin: 200px auto;
+    h2 {
+
+            margin-bottom: 58px ;
+   
+    }
+    .questions {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        .question {
+            margin: 13px auto ;
+            width: 890px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 25px;
+            align-items: center;
+            border: 2px solid rgba(224, 224, 224, 0.47);
+            box-sizing: border-box;
+            border-radius: $border-radius;
+            .plus {
+                position: relative;
+                .line:first-of-type  {
+                    position: absolute;
+                    background-color: $primary;
+                    width: 3px;
+                    height: 20px;
+                    border-radius: 3px;
+                    transform: rotate(90deg);
+
+
+                }
+                .line  {
+                    background-color: $primary;
+                    width: 3px;
+                    height: 20px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
 }
