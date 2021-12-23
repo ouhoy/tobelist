@@ -464,6 +464,16 @@ footer .subscribe .title-email h3 {
   width: 608px;
 }
 
+footer .subscribe .title-email form {
+  position: relative;
+}
+
+footer .subscribe .title-email button {
+  position: absolute;
+  top: 85px;
+  right: 100px;
+}
+
 footer .subscribe .title-email input {
   margin: 75px 0;
   padding-left: 12px;
@@ -474,6 +484,14 @@ footer .subscribe .title-email input {
           box-sizing: border-box;
   border-radius: 12px;
   background: none;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  color: white;
+}
+
+footer .subscribe .title-email input:focus {
+  outline: 1px #195BFF;
+  border: 2px solid #195BFF;
 }
 
 footer .footer-nav {

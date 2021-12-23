@@ -330,6 +330,14 @@ footer {
                 color: white;
                 width: 608px;    
             }
+            form {
+                position: relative;
+            }
+            button {
+                position: absolute;
+                top: 85px;
+                right: 100px;
+            }
             input {
                 margin: 75px 0;
                 padding-left: 12px;
@@ -339,7 +347,14 @@ footer {
                 box-sizing: border-box;
                 border-radius: 12px;
                 background: none;
+                transition: .2s ease-in-out;
+                color: white;
             }
+            input:focus {
+                outline: 1px $primary;
+                border: 2px solid $primary;
+            }
+
         }
     }
     .footer-nav {
