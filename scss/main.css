@@ -228,6 +228,10 @@ header h1 {
   width: 380px;
 }
 
+.reviews-section {
+  position: relative;
+}
+
 .reviews-section .reviews {
   display: -ms-grid;
   display: grid;
