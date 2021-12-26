@@ -1,11 +1,94 @@
 function $(id) {
-    return document.querySelectorAll(id)
+    return document.querySelector(id)
 }
-const userReview = $(".user-review");
-const reviews = document.querySelector(".reviews");
-const nextBtn = document.querySelector(".arrow-right");
-const prevBtn = document.querySelector(".arrow-left");
-const line = document.querySelector(".line");
+const reviewsConainer = document.querySelectorAll(".reviews-container");
+const reviewsSection = $(".reviews-section");
+const arrowRight = $(".arrow-right");
+const arrowLeft = $(".arrow-left");
+const lines = $(".lines");
+
+var currentSlide = 0;
+
+var numberOfReviews = reviewsConainer.length;
+
+
 function init() {
+    reviewsConainer.forEach((review, i)=>{
+        review.style.left = i * 100 + "%"
+    })
+};
+init();
+
+for (var i =0; i < numberOfReviews; i++ ) {
+    linesMaker()
+    var lineBackground = document.querySelectorAll(".line");
+
+}
+
+function linesMaker(num) {
+    const line =  document.createElement("div");
+    line.classList.add("line")
+    lines.appendChild(line)
+   
+}
+
+function changeLineColor(before, after) {
+    lineBackground[currentSlide].classList.add("silected-slide");
+
+
+}
+var lineColor =  changeLineColor();
+
+
+
+arrowRight.addEventListener("click", ()=>{
+    
+    currentSlide++;
+    lineBackground[currentSlide -1].classList.remove("silected-slide");
+
+    if (currentSlide >= numberOfReviews ) {
+        goToSLide(0);
+        return  
+    }
+    goToSLide(currentSlide);
+
+});
+arrowLeft.addEventListener("click", ()=>{
+
+    if (currentSlide  <= 0) {
+        lineBackground[currentSlide +1].classList.remove("silected-slide");
+        lineBackground[0].classList.remove("silected-slide");
+
+        goToSLide(numberOfReviews - 1);
+
+        return
+    }
+    currentSlide--;
+    lineBackground[currentSlide +1].classList.remove("silected-slide");
+    goToSLide(currentSlide)
+});
+
+function goToSLide(slideNumber) {
+
+    reviewsSection.style.transform =
+    "translateX(-" + 100 * slideNumber + "%)";
+    const crurrentSlider = currentSlide;
+    currentSlide = slideNumber;
+ 
+    changeLineColor(crurrentSlider, slideNumber)
+
+
+}
+
+for (let i = 0; i <numberOfReviews; i++) {
+
+
+    lineBackground[i].addEventListener("click", ()=>{
+        goToSLide(i)
+    })
+    
     
 }
+
+   
+

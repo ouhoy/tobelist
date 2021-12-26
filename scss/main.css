@@ -11,6 +11,10 @@ body {
   color: #AAAAAA;
 }
 
+.silected-slide {
+  background: #195BFF !important;
+}
+
 button {
   outline: none;
   border: none;
@@ -230,21 +234,42 @@ header h1 {
 
 .reviews-section {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 420px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
-.reviews-section .reviews {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  grid-auto-columns: auto;
+.review-container {
+  overflow: hidden;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.reviews-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 120px auto;
+  position: absolute;
+  -webkit-transition: 800ms ease-in-out;
+  transition: 800ms ease-in-out;
 }
 
-.reviews-section .reviews .user-review {
+.card-review {
+  margin: 15px;
   width: 624px;
   height: 370px;
   background: white;
@@ -262,11 +287,11 @@ header h1 {
           justify-content: center;
 }
 
-.reviews-section .reviews .user-review p {
+.card-review p {
   text-align: left;
 }
 
-.reviews-section .reviews .user-review .user {
+.card-review .user {
   width: 287px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,23 +305,35 @@ header h1 {
   margin-bottom: 40px;
 }
 
-.reviews-section .reviews .user-review .user p {
+.card-review .user p {
   margin: 0 12px;
 }
 
-.reviews-section .reviews .user-review p {
+.card-review p {
   width: 532px;
 }
 
-.reviews-section .reviews .slider-buttons {
-  margin: 52px auto;
+.slider-buttons {
+  margin: 0 auto;
   width: 100%;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
+  max-width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.reviews-section .reviews .slider-buttons .lines {
+.slider-buttons .empty-div {
+  width: 175px;
+  height: 100px;
+}
+
+.slider-buttons .lines {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,14 +345,15 @@ header h1 {
           align-items: center;
 }
 
-.reviews-section .reviews .slider-buttons .lines .line {
+.slider-buttons .lines .line {
   width: 45px;
   height: 6px;
   background-color: #AAAAAA;
   margin: 0 12px;
+  cursor: pointer;
 }
 
-.reviews-section .reviews .slider-buttons .butttons {
+.slider-buttons .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,6 +363,8 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 175px;
+  height: 100px;
 }
 
 .cta-section {
