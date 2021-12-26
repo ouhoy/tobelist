@@ -7,6 +7,14 @@ const arrowRight = $(".arrow-right");
 const arrowLeft = $(".arrow-left");
 const lines = $(".lines");
 
+const plus = document.getElementsByClassName("plus");
+const faqs =  document.getElementsByClassName("faqs");
+const faqsText = document.getElementsByClassName("faqs-text");
+
+ 
+ 
+
+
 var currentSlide = 0;
 
 var numberOfReviews = reviewsConainer.length;

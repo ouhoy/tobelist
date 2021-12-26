@@ -15,6 +15,10 @@ body {
   background: #195BFF !important;
 }
 
+.hide {
+  display: none;
+}
+
 button {
   outline: none;
   border: none;
@@ -403,10 +407,34 @@ header h1 {
 
 .faq {
   margin: 200px auto;
+  max-width: 896px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .faq h2 {
   margin-bottom: 58px;
+}
+
+.faq .faqs {
+  margin-top: 12px;
+  width: 100%;
+  padding: 35px;
+  padding: 24px 35px;
+  border: 2px solid rgba(224, 224, 224, 0.47);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.faq .faqs .body-02 {
+  color: #AAAAAA;
+  margin-top: 25px;
+  text-align: left;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .faq .questions {
@@ -424,30 +452,27 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .faq .questions .question {
-  margin: 13px auto;
-  width: 890px;
-  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid rgba(224, 224, 224, 0.47);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 12px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .faq .questions .question .plus {
   position: relative;
+  cursor: pointer;
 }
 
 .faq .questions .question .plus .line:first-of-type {

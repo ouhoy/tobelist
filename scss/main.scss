@@ -16,6 +16,9 @@ body {
 .silected-slide {
     background: #195BFF !important;
 }
+.hide {
+    display: none;
+}
 button {
     outline: none;
     border: none;
@@ -341,12 +344,35 @@ header {
     }
 }
 .faq {
- 
+  
     margin: 200px auto;
+    max-width: 896px;
+    transition: all 500ms ease-in-out;
+
+
     h2 {
 
             margin-bottom: 58px ;
    
+    }
+    .faqs {
+        margin-top: 12px;
+        width: 100%;
+        padding: 35px;
+        padding: 24px 35px;
+        border: 2px solid rgba(224, 224, 224, 0.47);
+        box-sizing: border-box;
+        border-radius: $border-radius;
+        transition: all 500ms ease-in-out;
+
+        .body-02 {
+            color: $gray;
+            margin-top: 25px;
+            text-align: left;
+            transition: all 500ms ease-in-out;
+
+         }
+
     }
     .questions {
         margin: 0 auto;
@@ -354,20 +380,18 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        transition: all 500ms ease-in-out;
+
         
         .question {
-            margin: 13px auto ;
-            width: 890px;
-            height: 100px;
             display: flex;
             justify-content: space-between;
-            padding: 0 25px;
             align-items: center;
-            border: 2px solid rgba(224, 224, 224, 0.47);
-            box-sizing: border-box;
-            border-radius: $border-radius;
+            transition: all 500ms ease-in-out;
+
             .plus {
                 position: relative;
+                cursor: pointer;
                 .line:first-of-type  {
                     position: absolute;
                     background-color: $primary;
