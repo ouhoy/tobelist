@@ -15,6 +15,11 @@ body {
   background: #195BFF !important;
 }
 
+.plus-rotate {
+  -webkit-transform: rotate(270deg) !important;
+          transform: rotate(270deg) !important;
+}
+
 .hide {
   display: none;
 }
@@ -408,8 +413,6 @@ header h1 {
 .faq {
   margin: 200px auto;
   max-width: 896px;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 .faq h2 {
@@ -425,16 +428,12 @@ header h1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 12px;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 .faq .faqs .body-02 {
   color: #AAAAAA;
   margin-top: 25px;
   text-align: left;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 .faq .questions {
@@ -452,8 +451,6 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 .faq .questions .question {
@@ -466,8 +463,6 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 .faq .questions .question .plus {
@@ -490,6 +485,8 @@ header h1 {
   width: 3px;
   height: 20px;
   border-radius: 3px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 footer {

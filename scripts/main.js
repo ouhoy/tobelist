@@ -9,10 +9,18 @@ const lines = $(".lines");
 
 const plus = document.getElementsByClassName("plus");
 const faqs =  document.getElementsByClassName("faqs");
-const faqsText = document.getElementsByClassName("faqs-text");
-
+const faqsText = document.querySelectorAll(".faqs-text");
+const plusLine = document.querySelectorAll(".plus-line");
  
- 
+for (let i = 0; i < faqs.length; i++) {
+    plus[i].addEventListener("click", function(){
+        this.classList.toggle(
+            faqsText[i].classList.toggle("hide")
+        );
+        this.classList.toggle(plusLine[i].classList.toggle("plus-rotate"));
+    })
+    
+}
 
 
 var currentSlide = 0;

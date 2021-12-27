@@ -16,8 +16,13 @@ body {
 .silected-slide {
     background: #195BFF !important;
 }
+.plus-rotate {
+    transform: rotate( 
+            270deg) !important;
+}
 .hide {
     display: none;
+
 }
 button {
     outline: none;
@@ -97,6 +102,7 @@ h1 {
     font-weight: 500;
     font-size: 16px;
     text-align: center;
+
  }
  .body-03 {
     font-family: 'Poppins', sans-serif;
@@ -347,7 +353,7 @@ header {
   
     margin: 200px auto;
     max-width: 896px;
-    transition: all 500ms ease-in-out;
+
 
 
     h2 {
@@ -363,13 +369,11 @@ header {
         border: 2px solid rgba(224, 224, 224, 0.47);
         box-sizing: border-box;
         border-radius: $border-radius;
-        transition: all 500ms ease-in-out;
 
         .body-02 {
             color: $gray;
             margin-top: 25px;
             text-align: left;
-            transition: all 500ms ease-in-out;
 
          }
 
@@ -380,14 +384,12 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: all 500ms ease-in-out;
 
         
         .question {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: all 500ms ease-in-out;
 
             .plus {
                 position: relative;
@@ -407,6 +409,7 @@ header {
                     width: 3px;
                     height: 20px;
                     border-radius: 3px;
+                    transition: 200ms ease-in-out;
                 }
             }
         }
