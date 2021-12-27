@@ -193,6 +193,7 @@ header h1 {
 
 .features-section {
   margin: 0 auto;
+  margin-bottom: 120px;
 }
 
 .features-section h2 {
@@ -205,12 +206,12 @@ header h1 {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   justify-items: center;
+  grid-row-gap: 90px;
 }
 
 .features-section .cards .card {
-  width: 580px;
-  height: 545px;
-  margin-bottom: 120px;
+  width: 85%;
+  padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,8 +226,8 @@ header h1 {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 12px;
-  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
 }
 
 .features-section .cards .card h3 {
@@ -250,7 +251,7 @@ header h1 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 120px;
   height: 420px;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
@@ -282,8 +283,8 @@ header h1 {
   width: 624px;
   height: 370px;
   background: white;
-  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,8 +356,9 @@ header h1 {
 }
 
 .slider-buttons .lines .line {
-  width: 45px;
-  height: 6px;
+  width: 30px;
+  border-radius: 7px;
+  height: 5px;
   background-color: #AAAAAA;
   margin: 0 12px;
   cursor: pointer;
@@ -374,6 +376,10 @@ header h1 {
           align-items: center;
   width: 175px;
   height: 100px;
+}
+
+.slider-buttons .buttons img {
+  height: 60%;
 }
 
 .cta-section {
@@ -395,6 +401,7 @@ header h1 {
 .cta-section h1 {
   font-size: 64px;
   margin: 65px 0;
+  margin-top: 120px;
 }
 
 .cta-section a {
@@ -411,7 +418,7 @@ header h1 {
 }
 
 .faq {
-  margin: 200px auto;
+  margin: 120px auto;
   max-width: 896px;
 }
 

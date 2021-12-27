@@ -159,6 +159,7 @@ header {
 }
 .features-section {
     margin: 0 auto;
+    margin-bottom: 120px;
        h2 {
             margin-bottom: 120px;
         }
@@ -167,17 +168,17 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+        grid-row-gap: 90px;
 
         .card {
-            width: 580px;
-            height: 545px;
-            margin-bottom: 120px;
+            width: 85%;
+            padding: 40px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             border-radius: $border-radius;
-            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
             h3 {
                 width: 295px;
                 text-align: center;
@@ -244,7 +245,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 120px;
     height: 420px ;
     transition: all 500ms ease-in-out;
 
@@ -268,7 +269,7 @@ header {
     width: 624px;
     height: 370px;
     background: white;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
     border-radius: $border-radius;
     display: flex;
     align-items: center;
@@ -314,8 +315,9 @@ header {
         align-items: center;
 
         .line {
-            width: 45px;
-            height: 6px;
+            width: 30px;
+            border-radius: 7px;
+            height: 5px;
             background-color: $gray;
             margin: 0 12px;
             cursor: pointer;
@@ -323,6 +325,9 @@ header {
      
     }
     .buttons {
+        img {
+            height: 60%;
+        }
        display: flex;
        justify-content: flex-end; 
        align-items: center;
@@ -339,6 +344,7 @@ header {
     h1 {
         font-size: 64px;
         margin: 65px 0;
+        margin-top: 120px;
     }
     a {
         display: flex;
@@ -351,7 +357,7 @@ header {
 }
 .faq {
   
-    margin: 200px auto;
+    margin: 120px auto;
     max-width: 896px;
 
 
