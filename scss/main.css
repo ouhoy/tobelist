@@ -7,6 +7,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.hide-for-mobile {
+  display: none;
+}
+
 .get-tobelist {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,6 +301,10 @@ main h2 {
   margin: 0 15px;
 }
 
+.cta-section a {
+  margin-top: 50px;
+}
+
 .faq {
   margin: 120px auto;
   max-width: 896px;
@@ -506,5 +514,72 @@ footer .footer-nav .menu-cta .menu a {
   margin: 0  12px;
   color: white;
   font-size: 14px;
+}
+
+@media screen and (min-width: 43.75em) {
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .hide-for-mobile {
+    display: block;
+  }
+  .hide-for-tablet {
+    display: none;
+  }
+  .title-02 {
+    font-size: 18px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  header button {
+    width: auto;
+  }
+  .cards {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .cards .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cards .card h3 {
+    margin: 26px auto;
+    font-size: 20px;
+    text-align: left;
+    width: 290px;
+  }
+  .cards .card p {
+    font-size: 16px;
+    text-align: left;
+    width: 290px;
+  }
+  .reviews-container .card-review {
+    width: 390px;
+  }
+  .cta-section a {
+    margin-top: 65px;
+  }
+  footer .subscribe .title-email form {
+    width: 518px;
+  }
+  footer .subscribe .title-email input {
+    width: 518px;
+  }
+  footer .subscribe .title-email h3 {
+    font-size: 36px;
+  }
+  footer .footer-nav .menu-cta .menu a {
+    font-size: 16px;
+    margin: 0 25px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

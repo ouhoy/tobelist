@@ -10,6 +10,9 @@ $body-02: 16px;
 body {
     font-family: 'Poppins', sans-serif;
 }
+.hide-for-mobile {
+    display: none;
+}
 .get-tobelist {
     display: flex;
     align-items: center;
@@ -225,6 +228,11 @@ main {
     margin: 0 15px;
 
 }
+.cta-section {
+    a {
+        margin-top: 50px;
+    }
+}
 .faq {
   
     margin: 120px auto;
@@ -364,7 +372,6 @@ footer {
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-
         .menu-cta {
             display: flex;
             align-items: center;
@@ -381,6 +388,89 @@ footer {
     
             }
           
+        }
+    }
+}
+
+@media screen and (min-width:43.75em) {
+  
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .hide-for-mobile {
+        display: block;
+    }
+    .hide-for-tablet {
+        display: none;
+    }
+    .title-02 {
+        font-size: 18px;
+    }
+    header {
+        p {
+            font-size: 16px;
+        }
+        button {
+            width: auto;
+        }
+    }
+    .cards {
+        max-width: 540px;
+        margin: 0 auto;
+        .card {
+            flex-direction: row;
+            justify-content: space-between;
+
+            h3 {
+                margin: 26px auto;
+                font-size: 20px;
+                text-align: left;
+                width: 290px;
+            }
+            p {
+                font-size: 16px;
+                text-align: left;
+                width: 290px;
+
+            }
+        }
+    }
+    .reviews-container {
+        .card-review {
+            width: 390px;
+        }
+    }
+    .cta-section {
+        a {
+            margin-top: 65px;
+        }
+    }
+    footer {
+        .subscribe{
+            .title-email {
+                form {
+                    width: 518px;
+                }
+                input {
+                    width: 518px;
+                }
+                h3 {
+                    font-size: 36px;
+                }
+            }
+        }
+        .footer-nav {
+            .menu-cta {
+                .menu {
+                    a {
+                        font-size: 16px;
+                        margin: 0 25px;
+                    }
+                }
+            }
         }
     }
 }
