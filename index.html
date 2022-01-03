@@ -13,20 +13,37 @@
 <body>
 <div class="container">
 
-<nav>
+<nav >
 
-    <img src="./images/Menu.svg" alt="menu">
-    <img src="./images/Logo.svg" alt="Logo">
-    <a href="#">Login</a>
+    <img src="./images/Menu.svg" class="hide-for-desktop" alt="menu">
+
+    <div class="logo">
+        <img src="./images/Logo.svg" alt="Tobelist logo">
+    </div>
+    <div class="menu-cta">
+        <div class="menu  hide-for-mobile hide-for-tablet">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Privacy</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="cta">
+            <a href="#">Login</a>
+            <button class="hide-for-mobile hide-for-tablet">Get started</button>
+        </div>
 </nav>
 
 <header>
-    <h1>
-        “Forget your to-do list<br>
-    <span>&</span> create your to-be list”
+    <div class="content">
+    <h1>Forget your to-do list<br>
+    <span>&</span> create your to-be list
     </h1> 
     <p class="grey">Tobelist is the ultimate form of boosting productivity. Unlike many other tools out there, this one can incorporate multiple methods.</p>
     <button>Get started</button>
+</div>
+<img class="hide-for-mobile hide-for-tablet" src="./images/Saly-13.svg" alt="saly">
 </header>
 <main>
 
