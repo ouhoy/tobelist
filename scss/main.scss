@@ -10,6 +10,16 @@ $body-02: 16px;
 body {
     font-family: 'Poppins', sans-serif;
 }
+.get-tobelist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary;
+    img {
+        margin-left: 8px;
+    }
+    font-size: 16px;
+}
 .grey {
     color: $gray;
 }
@@ -41,63 +51,58 @@ a {
     color: black;
     font-weight: 500;
 }
+
+h1, h2, h3 {
+    span {
+        color: $primary;
+    }
+}
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 72px;
-    line-height: 96px;
+    font-weight: 500;
+    font-size: 27px;
     text-align: center;
  }
  h2 {
-    font-family: 'Playfair Display', serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 58px;
-    line-height: 77px;
+    font-weight: 500;
+    font-size: 22px;
     text-align: center
  }
  h3 {
-    font-family: 'Playfair Display', serif;
+    text-align: center;
     font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 43px;
+    font-weight: 500;
+    font-size: 18px;
  }
  .container {
      max-width: 1280px;
      margin: 0 auto;
-     width: 98%;
+     width: 95%;
  }
  .title-01 {
-    font-family: 'Playfair Display', serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 43px;
+    font-weight: 500;
+    font-size: 18px;
     display: flex;
     align-items: center;
     text-align: center;
  }
  
  .title-02 {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 36px;
     text-align: center;
  }
  
  .body-01 {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     text-align: center;
  }
  .body-02 {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -105,7 +110,6 @@ h1 {
 
  }
  .body-03 {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -120,240 +124,106 @@ h1 {
 }
 
 nav {
-    height: 90px;
-    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .menu-cta {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        .menu {
-            margin-right:40px ;
-            border-right: 1px $gray solid;
-            
-            a {
-                margin-right: 40px;
-            }
-
-        }
-        .cta {
-            a {
-                margin-right: 40px;
-            }
-        }
-    }
+    height: 70px;
 }
 header {
     margin: 90px auto;
-    width: 100%;
+
+   p {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin: 27px auto;
+   }
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
- h1 {
-     margin: 108px;
- }
+    justify-content: center;
+    button {
+        width: 100%;
+        max-width: 325px;
+    }
+ 
+} 
+main {
+    h2 {
+        margin-bottom: 80px;
 
+    }
 }
-.features-section {
-    margin: 0 auto;
-    margin-bottom: 120px;
-       h2 {
-            margin-bottom: 120px;
+.cards {
+    h3 {
+        margin: 30px auto;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+        img {
+            height: 200px;
+            width: 200px;
         }
-    .cards {
-     
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        grid-row-gap: 90px;
-
-        .card {
-            width: 85%;
-            padding: 40px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: $border-radius;
-            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
-            h3 {
-                width: 295px;
-                text-align: center;
-                margin: 23px 0;
-            }
-            p {
-                color: $gray;
-                font-weight: 400;
-                width: 380px;
-            }
+        p {
+            color: $gray;
+            font-size: 14px;
+            text-align: center;
+            width: 333px;
         }
     }
 }
-// .review-conatiner {
-//     overflow: hidden;
-//     max-width: 1320px;
-//     height:520px ;
-//     margin: 0 auto;
-//     position: relative;
-// }
-// .reviews-section {
-    
-
-//     .reviews {
-//         position: absolute;
-//         display: flex;
-//         justify-content: center;
-//         transition: all 500ms ease-in-out;
-//         margin: 120px auto;
-//         .user-review {
-//             p {
-//                 text-align: left;
-//             }
-//             margin: 0 15px;
-//             width: 624px;
-//             height: 370px;
-//             background: white;
-//             box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
-//             border-radius: $border-radius;
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             .user {
-//                 width: 287px;
-//                 display: flex;
-//                 align-items: center;
-//                 justify-content: flex-start;
-//                 margin-bottom: 40px;
-//                 p {
-//                     margin: 0 12px;
-//                 }
-//             }
-//             p {
-//                 width: 532px;
-//             }
-//         }
-
-//     }
-// }
-
-
-.reviews-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 120px;
-    height: 420px ;
-    transition: all 500ms ease-in-out;
-
-}
-.review-container {
+.review-section {
     overflow: hidden;
-    max-width: 1320px;
-    margin: 0 auto;
-}
+    position: relative;
+    height: 390px;
+    width: 100%;
+    .slider-buttons {
+        position: absolute;
+        width: 100%;
+        top: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .lines {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .slider-point {
+                margin: 0px 12px ;
+                width: 45px;
+                height: 6px;
+                background: #DBDBDB;
+                border-radius: 15px;
+            }
+        }
+    }
 
+}
 .reviews-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
     transition: 800ms ease-in-out;
-
+    height: 240px;   
 }
 .card-review {
-    margin: 15px;
-    width: 624px;
-    height: 370px;
-    background: white;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
-    border-radius: $border-radius;
+    width: 330px;
+    height: 240px;   
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    p {
-        text-align: left;
- }
- .user {
-                    width: 287px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    margin-bottom: 40px;
-                    p {
-                        margin: 0 12px;
-                    }
-                }
+    margin: 0 15px;
 
-                p {
-                                    width: 532px;
-                                }
-
-
-}
-
-
-.slider-buttons {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1280px;
-    // grid-column-start: 1;
-    // grid-column-end: 3;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .empty-div {
-        width: 175px;
-        height: 100px;   
-    }
-    .lines {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .line {
-            width: 30px;
-            border-radius: 7px;
-            height: 5px;
-            background-color: $gray;
-            margin: 0 12px;
-            cursor: pointer;
-        }
-     
-    }
-    .buttons {
-        img {
-            height: 60%;
-        }
-       display: flex;
-       justify-content: flex-end; 
-       align-items: center;
-       width: 175px;
-       height: 100px;    
-    }
-}
-.cta-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    h1 {
-        font-size: 64px;
-        margin: 65px 0;
-        margin-top: 120px;
-    }
-    a {
-        display: flex;
-        align-items: center;
-        img {
-            margin-left: 5px;
-        }
-
-    }
 }
 .faq {
   
@@ -370,17 +240,18 @@ header {
     .faqs {
         margin-top: 12px;
         width: 100%;
-        padding: 35px;
-        padding: 24px 35px;
+      
         border: 2px solid rgba(224, 224, 224, 0.47);
         box-sizing: border-box;
         border-radius: $border-radius;
 
-        .body-02 {
+        .faqs-text {
             color: $gray;
-            margin-top: 25px;
             text-align: left;
-
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0 20px 20px 20px;
+          
          }
 
     }
@@ -390,12 +261,18 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+    
         
         .question {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 20px;
+            p {
+                font-size: 14;
+                color: black;
+                font-weight: 500;
+            }
 
             .plus {
                 position: relative;
@@ -433,29 +310,37 @@ footer {
         max-width: 1280px;
         width: 100%;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
+    
+
         .title-email {
             h3 {
                 font-style: normal;
-                font-weight: bold;
-                font-size: 48px;
-                line-height: 64px;
+                font-weight: 400;
+                font-size:22px;
                 color: white;
-                width: 608px;    
             }
             form {
                 position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 68px;
+                width: 333px;
+                margin: 55px auto;
+
             }
             button {
                 position: absolute;
-                top: 85px;
-                right: 100px;
+                right: 2%;
             }
             input {
-                margin: 75px 0;
+                
+                position: absolute;
                 padding-left: 12px;
-                width: 518px;
+                width: 333px;
                 height: 68px;
                 border: 2px solid rgba(170, 170, 170, 0.2);
                 box-sizing: border-box;
@@ -478,14 +363,19 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-direction: column;
+
         .menu-cta {
             display: flex;
             align-items: center;
             justify-content: center;
-            .menu {                
+            .menu {   
+                margin: 55px auto;
+             
                 a {
-                    margin:0  20px;
+                    margin:0  12px;
                     color: white;
+                    font-size: 14px;
 
                 }
     
