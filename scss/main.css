@@ -534,6 +534,7 @@ footer .footer-nav .menu-cta .menu a {
   }
   header p {
     font-size: 16px;
+    max-width: 540px;
   }
   header button {
     width: auto;
@@ -576,6 +577,99 @@ footer .footer-nav .menu-cta .menu a {
   }
   footer .subscribe .title-email h3 {
     font-size: 36px;
+  }
+  footer .footer-nav .menu-cta .menu a {
+    font-size: 16px;
+    margin: 0 25px;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  h1 {
+    font-size: 63px;
+  }
+  h2 {
+    font-size: 58px;
+  }
+  .hide-for-mobile {
+    display: block;
+  }
+  .hide-for-tablet {
+    display: block;
+  }
+  .hide-for-desktop {
+    display: none;
+  }
+  .title-02 {
+    font-size: 24px;
+  }
+  header p {
+    font-size: 16px;
+    max-width: 613px;
+  }
+  header button {
+    width: auto;
+  }
+  .cards {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .cards .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cards .card img {
+    width: 500px;
+    height: 500px;
+  }
+  .cards .card h3 {
+    margin: 26px auto;
+    font-size: 40px;
+    text-align: left;
+    max-width: 600px;
+    width: auto;
+  }
+  .cards .card p {
+    font-size: 18px;
+    text-align: left;
+    max-width: 500px;
+    width: auto;
+  }
+  .cta-section a {
+    margin-top: 100px;
+    font-size: 18px;
+  }
+  .faq .questions .question p {
+    font-size: 18px;
+  }
+  footer .subscribe {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .subscribe .title-email form {
+    width: 518px;
+  }
+  footer .subscribe .title-email input {
+    width: 518px;
+  }
+  footer .subscribe .title-email h3 {
+    font-size: 48px;
+    text-align: left;
+  }
+  footer .footer-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   footer .footer-nav .menu-cta .menu a {
     font-size: 16px;

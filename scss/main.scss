@@ -412,6 +412,8 @@ footer {
     header {
         p {
             font-size: 16px;
+            max-width: 540px;
+
         }
         button {
             width: auto;
@@ -463,6 +465,104 @@ footer {
             }
         }
         .footer-nav {
+            .menu-cta {
+                .menu {
+                    a {
+                        font-size: 16px;
+                        margin: 0 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:62em) {
+  
+    h1 {
+        font-size: 63px;
+    }
+    h2 {
+        font-size: 58px;
+    }
+    .hide-for-mobile {
+        display: block;
+    }
+    .hide-for-tablet {
+        display: block;
+    }
+    .hide-for-desktop {
+        display: none;
+    }
+    .title-02 {
+        font-size: 24px;
+    }
+    header {
+        p {
+            font-size: 16px;
+            max-width: 613px;
+
+        }
+        button {
+            width: auto;
+        }
+    }
+    .cards {
+        max-width: 1280px;
+        margin: 0 auto;
+        .card {
+            flex-direction: row;
+            justify-content: space-around;
+            img {
+                width: 500px;
+                height: 500px;
+            }
+
+            h3 {
+                margin: 26px auto;
+                font-size: 40px;
+                text-align: left;
+                max-width: 600px;
+                width: auto;
+            }
+            p {
+                font-size: 18px;
+                text-align: left;
+                max-width: 500px;
+                width: auto;
+
+
+            }
+        }
+    }
+    .cta-section {
+        a {
+            margin-top: 100px;
+            font-size: 18px;
+        }
+    }
+    .faq .questions .question p {
+
+        font-size: 18px;
+    }
+    footer {
+        .subscribe{
+            flex-direction: row;
+            justify-content: space-between;
+            .title-email {
+                form {
+                    width: 518px;
+                }
+                input {
+                    width: 518px;
+                }
+                h3 {
+                    font-size: 48px;
+                    text-align: left;
+                }
+            }
+        }
+        .footer-nav {
+            flex-direction: row;
             .menu-cta {
                 .menu {
                     a {
