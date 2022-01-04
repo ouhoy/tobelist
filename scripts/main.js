@@ -6,6 +6,14 @@ const reviewsSection = $(".reviews-section");
 const arrowRight = $(".arrow-right");
 const arrowLeft = $(".arrow-left");
 const lines = $(".lines");
+const hamMenu = $(".ham-menu");
+const hamburgerMenu= $(".hamburger-menu");
+
+
+hamburgerMenu.addEventListener("click", ()=>{
+    hamMenu.classList.toggle("hide")
+
+})
 
 const plus = document.getElementsByClassName("plus");
 const faqs =  document.getElementsByClassName("faqs");

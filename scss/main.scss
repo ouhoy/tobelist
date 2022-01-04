@@ -125,18 +125,63 @@ h1 {
 .background-blue {
     background-color: $primary;
 }
+.opacity {
+    opacity: 0;
+}
+.ham-menu {
+    
+    background: white;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    .menu {
+      padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        
+        a {
+            margin-bottom: 14px;
+            font-weight: 600;
+            font-size: 30px;
+            img {
+                width: 40px;
+            }
+        }
+
+    }
+}
+.nav-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: 1px solid rgb(224, 224, 224);
+   background: #ffffffad;
+   backdrop-filter: blur(15px);
+   position: fixed;
+   top: 0;
+   width: 100%;
+
+
+
+}
 
 nav {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 70px;
+    width: 95%;
+
     .logo {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+    
 }
 header {
     .content {
@@ -219,6 +264,9 @@ main {
 
 }
 .reviews-container {
+    
+    z-index: -1;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -508,7 +556,11 @@ footer {
     .title-02 {
         font-size: 24px;
     }
+    .nav-container {
+        width: 100%;
+    }
     nav {
+        width: 1280px;
 
         .menu-cta {
             display: flex;
@@ -563,7 +615,7 @@ footer {
         }
     }
     .cards {
-        max-width: 1280px;
+        max-width: 1000px; 
         margin: 0 auto;
         .card {
             flex-direction: row;
@@ -577,13 +629,13 @@ footer {
                 margin: 26px auto;
                 font-size: 40px;
                 text-align: left;
-                max-width: 600px;
+                max-width:  377px;;
                 width: auto;
             }
             p {
                 font-size: 18px;
                 text-align: left;
-                max-width: 505px;
+                max-width: 300px;
                 width: auto;
 
 

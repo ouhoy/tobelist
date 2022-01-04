@@ -7,35 +7,50 @@
     <link rel="stylesheet" href="./scss/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Tobelist</title>
     <link rel="icon" type="image/x-icon" href="/images/fav-icon.svg">
 
 </head>
 <body>
-<div class="container">
-
-<nav >
-
-    <img src="./images/Menu.svg" class="hide-for-desktop" alt="menu">
-
-    <div class="logo">
-        <img src="./images/Logo.svg" alt="Tobelist logo">
-    </div>
-    <div class="menu-cta">
-        <div class="menu  hide-for-mobile hide-for-tablet">
+    <div class="ham-menu hide-for-desktop hide">
+        <div class="menu">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Privacy</a>
             <a href="#">Blog</a>
             <a href="#">Contact</a>
+            <a class="get-tobelist" href="#">GET STARTED <img src="./images/arrow.svg" alt="arrow"></a>
+
         </div>
 
-        <div class="cta">
-            <a href="#">Login</a>
-            <button class="hide-for-mobile hide-for-tablet">Get started</button>
+    </div>
+    <div class="nav-container">
+    <nav >
+
+        <img src="./images/Menu.svg"  class="hide-for-desktop hamburger-menu" alt="menu">
+    
+        <div class="logo">
+            <img src="./images/Logo.svg" alt="Tobelist logo">
         </div>
-</nav>
+        <div class="menu-cta">
+            <div class="menu  hide-for-mobile hide-for-tablet">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">PRIVACY</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </div>
+    
+            <div class="cta">
+                <a href="#">Login</a>
+                <button class="hide-for-mobile hide-for-tablet">Get started</button>
+            </div>
+    </nav>
+</div>
+<div class="container">
+
+
 
 <header>
     <div class="content">

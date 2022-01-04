@@ -144,6 +144,65 @@ h3 {
   background-color: #195BFF;
 }
 
+.opacity {
+  opacity: 0;
+}
+
+.ham-menu {
+  background: white;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.ham-menu .menu {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ham-menu .menu a {
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.ham-menu .menu a img {
+  width: 40px;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #e0e0e0;
+  background: #ffffffad;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,6 +214,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 70px;
+  width: 95%;
 }
 
 nav .logo {
@@ -294,6 +354,7 @@ main h2 {
 }
 
 .reviews-container {
+  z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,6 +692,12 @@ footer .footer-nav .menu-cta .menu a {
   .title-02 {
     font-size: 24px;
   }
+  .nav-container {
+    width: 100%;
+  }
+  nav {
+    width: 1280px;
+  }
   nav .menu-cta {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -706,7 +773,7 @@ footer .footer-nav .menu-cta .menu a {
     width: auto;
   }
   .cards {
-    max-width: 1280px;
+    max-width: 1000px;
     margin: 0 auto;
   }
   .cards .card {
@@ -725,13 +792,13 @@ footer .footer-nav .menu-cta .menu a {
     margin: 26px auto;
     font-size: 40px;
     text-align: left;
-    max-width: 600px;
+    max-width: 377px;
     width: auto;
   }
   .cards .card p {
     font-size: 18px;
     text-align: left;
-    max-width: 505px;
+    max-width: 300px;
     width: auto;
   }
   .cta-section a {
