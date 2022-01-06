@@ -11,7 +11,8 @@ const hamburgerMenu= $(".hamburger-menu");
 
 
 hamburgerMenu.addEventListener("click", ()=>{
-    hamMenu.classList.toggle("hide")
+    hamMenu.classList.toggle("hide");
+    document.body.classList.toggle("overflow-hiden")
 
 })
 
