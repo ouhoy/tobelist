@@ -442,6 +442,10 @@ footer {
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
+        p {
+            font-weight: 400;
+
+        }
         .menu-cta {
             display: flex;
             align-items: center;
@@ -453,6 +457,7 @@ footer {
                     margin:0  12px;
                     color: white;
                     font-size: 14px;
+                    font-weight: 400;
 
                 }
     

@@ -591,6 +591,10 @@ footer .footer-nav {
           flex-direction: column;
 }
 
+footer .footer-nav p {
+  font-weight: 400;
+}
+
 footer .footer-nav .menu-cta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,6 +615,7 @@ footer .footer-nav .menu-cta .menu a {
   margin: 0  12px;
   color: white;
   font-size: 14px;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 43.75em) {
