@@ -64,15 +64,19 @@ h1, h2, h3 {
     }
 }
 h1 {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 27px;
     text-align: center;
+    font-weight: 500;
+
  }
  h2 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 22px;
-    text-align: center
+    text-align: center;
+    font-weight: 500;
+
  }
  h3 {
     text-align: center;
@@ -87,37 +91,41 @@ h1 {
  }
  .title-01 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     display: flex;
     align-items: center;
     text-align: center;
+    font-weight: 500;
+
  }
  
  .title-02 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 36px;
     text-align: center;
+    font-weight: 500;
+
  }
  
  .body-01 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     text-align: center;
  }
  .body-02 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     text-align: center;
 
  }
  .body-03 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     text-align: center;
  }
@@ -161,7 +169,6 @@ h1 {
    display: flex;
    align-items: center;
    justify-content: center;
-   border-bottom: 1px solid rgb(224, 224, 224);
    background: #ffffffad;
    backdrop-filter: blur(15px);
    position: fixed;
@@ -198,7 +205,6 @@ header {
     margin: 90px auto;
 
    p {
-    font-weight: 500;
     font-size: 15px;
     text-align: center;
     margin: 27px auto;
@@ -547,7 +553,7 @@ footer {
 
     }
     h2 {
-        font-size: 58px;
+        font-size: 50px;
     }
     .hide-for-mobile {
         display: block;
@@ -634,13 +640,13 @@ footer {
                 margin: 26px auto;
                 font-size: 40px;
                 text-align: left;
-                max-width:  377px;;
+                max-width:  405px;;
                 width: auto;
             }
             p {
                 font-size: 18px;
                 text-align: left;
-                max-width: 300px;
+                max-width: 405px;
                 width: auto;
 
 
