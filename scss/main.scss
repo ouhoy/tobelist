@@ -50,6 +50,7 @@ button {
     font-weight: 500;
     padding: 9.5px 28.4px;
     line-height: 175%;
+    cursor: pointer;
 }
 
 a {
@@ -143,9 +144,10 @@ h1 {
     
     background: white;
     height: 100vh;
-    width: 100%;
-    position: absolute;
+    width: 100%; 
+    position: fixed;
     top: 70px;
+    z-index: 1;
     transition: all .5s ease-in-out;
     .menu {
       padding: 40px;
@@ -153,6 +155,8 @@ h1 {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        transition: all .5s ease-in-out;
+
         
         a {
             margin-bottom: 14px;
@@ -186,6 +190,9 @@ nav {
     justify-content: space-between;
     height: 70px;
     width: 95%;
+    img {
+        cursor: pointer;
+    }
 
     .logo {
         display: flex;
@@ -551,7 +558,7 @@ footer {
         }
     }
 }
-@media screen and (min-width:62em) {
+@media screen and (min-width:65em) {
   
     h1 {
         font-size: 63px;

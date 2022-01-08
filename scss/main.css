@@ -60,6 +60,7 @@ button {
   font-weight: 500;
   padding: 9.5px 28.4px;
   line-height: 175%;
+  cursor: pointer;
 }
 
 a {
@@ -160,8 +161,9 @@ h3 {
   background: white;
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 70px;
+  z-index: 1;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -181,6 +183,8 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .ham-menu .menu a {
@@ -224,6 +228,10 @@ nav {
           justify-content: space-between;
   height: 70px;
   width: 95%;
+}
+
+nav img {
+  cursor: pointer;
 }
 
 nav .logo {
@@ -686,7 +694,7 @@ footer .footer-nav .menu-cta .menu a {
   }
 }
 
-@media screen and (min-width: 62em) {
+@media screen and (min-width: 65em) {
   h1 {
     font-size: 63px;
   }
