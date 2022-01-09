@@ -283,6 +283,7 @@ header p {
   font-size: 15px;
   text-align: center;
   margin: 27px auto;
+  max-width: 376px;
 }
 
 header button {
