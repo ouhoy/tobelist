@@ -9,6 +9,7 @@ $body-02: 16px;
 }
 body {
     font-family: 'Poppins', sans-serif;
+    color: #1c1e21;
 }
 .hide-for-mobile {
     display: none;
@@ -55,7 +56,7 @@ button {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #1c1e21;
     font-weight: 500;
 }
 
@@ -209,7 +210,7 @@ header {
     align-items: center;
     flex-direction: column;
     }
-    margin: 90px auto;
+    margin: 115px auto;
 
    p {
     font-size: 15px;
@@ -386,7 +387,7 @@ main {
     }
 }
 footer {
-    background-color: black;
+    background-color: #1C1C1C; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -563,11 +564,11 @@ footer {
 @media screen and (min-width:65em) {
   
     h1 {
-        font-size: 63px;
+        font-size: 64px;
 
     }
     h2 {
-        font-size: 50px;
+        font-size: 48px;
     }
     .hide-for-mobile {
         display: block;
@@ -652,7 +653,7 @@ footer {
 
             h3 {
                 margin: 26px auto;
-                font-size: 40px;
+                font-size: 34px;
                 text-align: left;
                 max-width:  405px;;
                 width: auto;

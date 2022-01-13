@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: #1c1e21;
 }
 
 .hide-for-mobile {
@@ -65,7 +66,7 @@ button {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #1c1e21;
   font-weight: 500;
 }
 
@@ -247,7 +248,7 @@ nav .logo {
 }
 
 header {
-  margin: 90px auto;
+  margin: 115px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,7 +499,7 @@ main h2 {
 }
 
 footer {
-  background-color: black;
+  background-color: #1C1C1C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,10 +698,10 @@ footer .footer-nav .menu-cta .menu a {
 
 @media screen and (min-width: 65em) {
   h1 {
-    font-size: 63px;
+    font-size: 64px;
   }
   h2 {
-    font-size: 50px;
+    font-size: 48px;
   }
   .hide-for-mobile {
     display: block;
@@ -812,7 +813,7 @@ footer .footer-nav .menu-cta .menu a {
   }
   .cards .card h3 {
     margin: 26px auto;
-    font-size: 40px;
+    font-size: 34px;
     text-align: left;
     max-width: 405px;
     width: auto;
