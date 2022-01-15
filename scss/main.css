@@ -6,6 +6,7 @@
 body {
   font-family: 'Space Grotesk', sans-serif;
   color: #060605;
+  overflow-x: hidden;
 }
 
 p {
@@ -83,6 +84,15 @@ a {
 .container {
   width: 95%;
   margin: 0 auto;
+  position: relative;
+}
+
+.container .nav-background {
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 nav {
@@ -95,15 +105,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
   width: 100%;
-}
-
-nav .nav-background {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  top: 0;
 }
 
 nav .website-icon {
@@ -170,16 +172,16 @@ header h1 {
 
 header p {
   text-align: center;
-  margin: 25px auto;
+  margin: 5vh auto;
   max-width: 319px;
 }
 
 header button {
-  margin-bottom: 25px;
+  margin-bottom: 5vh;
 }
 
 header .numbers {
-  width: 100%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,6 +278,10 @@ main .cards .card {
           justify-content: center;
 }
 
+main .cards .card p {
+  max-width: 394px;
+}
+
 main .cards .card h3 {
   text-align: center;
   margin: 20px 0;
@@ -335,5 +341,122 @@ main .explore-card a {
 main .explore-card a img {
   margin: 0;
   margin-left: 5px;
+}
+
+main .cta-card {
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 3px 23px 64px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 23px 64px rgba(0, 0, 0, 0.04);
+  border-radius: 37px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 70px 0;
+}
+
+main .cta-card img {
+  width: 250px;
+  margin: 25px 0;
+}
+
+main .cta-card h2 {
+  max-width: 354px;
+}
+
+main .cta-card p {
+  margin: 25px 0;
+  width: 98%;
+  max-width: 400px;
+}
+
+main .cta-card button {
+  margin-bottom: 25px;
+  width: 55%;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+footer .nav-background {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+}
+
+footer h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: -0.045em;
+  text-align: center;
+  background: linear-gradient(75.96deg, #FFC83A 13.64%, #FF008A 46.53%, #6100FF 78.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 68px;
+  width: 333px;
+  margin: 40px auto;
+}
+
+footer input {
+  position: absolute;
+  padding-left: 12px;
+  width: 333px;
+  height: 68px;
+  border: 2px solid rgba(170, 170, 170, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 37px;
+  background: none;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  color: black;
+}
+
+footer button {
+  position: absolute;
+  right: 2%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  width: auto;
+  width: 102.39px;
+  height: 47px;
+}
+
+footer input:focus {
+  outline: 1px #6100FF;
+  border: 2px solid #6100FF;
 }
 /*# sourceMappingURL=main.css.map */
