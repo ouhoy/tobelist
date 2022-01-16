@@ -73,10 +73,6 @@ a {
   text-decoration: none;
 }
 
-.hide-for-mobile {
-  display: none;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -106,6 +102,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  margin-top: 1.5vh;
 }
 
 nav .website-icon {
@@ -458,5 +455,99 @@ footer button {
 footer input:focus {
   outline: 1px #6100FF;
   border: 2px solid #6100FF;
+}
+
+.hide-for-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hide-for-tablet {
+    display: none;
+  }
+  .hide-for-mobile {
+    display: block;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 82px;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 69px;
+    text-align: center;
+  }
+  button {
+    font-size: 22px;
+    width: auto;
+  }
+  header p {
+    font-size: 18px;
+    max-width: 587px;
+  }
+  main p {
+    font-size: 18px;
+    max-width: 698px;
+  }
+  main .explore-card h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    max-width: 518px;
+    margin: 0 auto;
+  }
+  main .explore-card p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 520px;
+  }
+  main .cta-card {
+    padding: 60px 33px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .cta-card h2 {
+    max-width: 353px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    text-align: left;
+  }
+  main .cta-card p {
+    text-align: left;
+  }
+  main .cta-card img {
+    width: 330px;
+  }
+  main .cards .card p {
+    font-size: 16px;
+  }
+  main .cards .card h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  footer h3 {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: -0.045em;
+  }
+  footer form, footer input {
+    width: 518px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
