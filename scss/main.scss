@@ -1,6 +1,7 @@
 $primary: #6100FF;
 $gray: #AAAAAA;
 $color-gradient: linear-gradient(75.96deg, #FFC83A 13.64%, #FF008A 46.53%, #6100FF 78.88%);
+$color-gradient2:linear-gradient(92.05deg, #FFC83A -0.23%, #FF008A 44.41%, #6100FF 112.02%);
 $dark-color-gradient: linear-gradient(312.16deg, #070718 19.71%, #40404F 93.55%);
 $border-radius:37px;
 $body-02: 16px;
@@ -23,6 +24,7 @@ p {
 button {
     outline: none;
     border: none;
+    cursor: pointer;
     color: white;
     background: $dark-color-gradient;
     font-style: normal;
@@ -61,7 +63,7 @@ h3 {
 
 }
 a {
-    color: black;
+    color: #1E1B1B;
     text-decoration: none;
 }
 .overflow-hidden {
@@ -165,6 +167,7 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
 h2 {
         text-align: center;
@@ -195,19 +198,34 @@ h2 {
         }
     }
     .explore-section {
-        width: 100%;
+        width: 95%;
         padding: 55px 0;
-        background: $dark-color-gradient;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         p {
             color: #E9E9E9;
 
         }
+    }
+    .explore-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .explore-card {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        .explore-card-content {
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
         img {
             margin: 30px 0;
         }
@@ -241,11 +259,11 @@ h2 {
 
         }
     }
+    .cta-section {
+        width: 95%;
+    }
     .cta-card {
-    background: #FFFFFF;
-    border: 1px solid #ECECEC;
     box-sizing: border-box;
-    box-shadow: 3px 23px 64px rgba(0, 0, 0, 0.04);
     border-radius: 37px;
     width: 100%;
     display: flex; 
@@ -253,25 +271,36 @@ h2 {
     align-items: center;
     justify-content: center;
     margin: 70px 0;
+    .cta-card-content {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            max-width: 354px;
+    
+        }
+        p {
+            margin: 25px 0;
+            width: 98%;
+            max-width: 400px;
+            color: #DFDFDF;
+    
+        }
+        button {
+            margin-bottom: 25px;
+            width: 55%;
+            background: $color-gradient2;
+
+        }
+    }
     img {
         width: 250px;
         margin: 25px 0;
 
     }
-    h2 {
-        max-width: 354px;
-
-    }
-    p {
-        margin: 25px 0;
-        width: 98%;
-        max-width: 400px;
-
-    }
-    button {
-        margin-bottom: 25px;
-        width: 55%;
-    }
+ 
     }
 }
 footer {
@@ -410,19 +439,33 @@ main {
     .cta-card {
         padding: 60px 33px;
           flex-direction: row;
-          h2 {
-              max-width: 353px;
-              font-style: normal;
-              font-weight: 700;
-              font-size: 38px;
-              line-height: 45px;  
-              text-align: left;
- 
-                   }
-            p {
+          .cta-card-content {
+            display: flex; 
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+    
+            h2 {
+                max-width: 353px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 45px;  
                 text-align: left;
+                font-size: 38px;
+                line-height: 45px;
+                letter-spacing: -0.045em;
+   
+                     }
+          
+                     p {
+                        text-align: left;
 
-            }
+        
+                    }
+           
+        }
+        
             img {
                 width: 330px;
             }
@@ -470,7 +513,7 @@ footer {
     //     display: block ;
     // }
     .nav-container {
-        width: 95%;
+        width:100%;
 
     }
     nav {
@@ -549,8 +592,39 @@ footer {
 
    main {
        
+    .explore-container > img {
+        width: 500px;
+        margin-right: 90px;
+    }
+    .explore-container {
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+
+
+        .explore-card {
+            align-items: flex-start;
+            margin-bottom: 45px;
+            .explore-card-content {
+                align-items: flex-start;
+            }
+          
+            h3, p {
+                text-align: left;
+            }
+            a {
+                justify-content: flex-start;
+                text-align: left;
+            }
+           
+        }
+       }
+
     .cards {
         margin: 100px auto;
+        margin-bottom: 0px;
         display: flex;
         align-items: flex-start;
         flex-direction: row;
@@ -566,49 +640,36 @@ footer {
     .cta-card {
         max-width: 1040px;
         padding: 0 33px;
+        margin: 70px auto;
+        .cta-card-content {
+            display: flex; 
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+    
+            h2 {
+
+                font-weight: 700;
+                font-size: 46px;
+                line-height: 45px;
+                letter-spacing: -0.045em;
+                max-width: 520px;
+    
+                
+                
+            }
+            p {
+                max-width: 520px;
+            }
+           
+        }
         img {
             width: 400px;
         }
         justify-content: space-between;
-        h2 {
-
-            font-weight: 700;
-            font-size: 46px;
-            line-height: 45px;
-            letter-spacing: -0.045em;
-            max-width: 520px;
-
-            
-            
-        }
-        p {
-            max-width: 520px;
-        }
+       
     }
    }
-    .explore-container > img {
-        width: 500px;
-        margin-right: 90px;
-    }
-    .explore-container {
-        max-width: 1280px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; 
-
-        .explore-card {
-            align-items: flex-start;
-            margin-bottom: 45px;
-          
-            h3, p {
-                text-align: left;
-            }
-            a {
-                justify-content: flex-start;
-                text-align: left;
-            }
-           
-        }
-       }
+ 
 
 }
