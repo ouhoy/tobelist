@@ -468,6 +468,8 @@ main .cta-card img {
 footer {
   position: relative;
   width: 100%;
+  background: linear-gradient(312.16deg, #070718 19.71%, #40404F 93.55%);
+  padding: 80px 0;
 }
 
 footer .nav-background {
@@ -511,7 +513,7 @@ footer input {
   padding-left: 12px;
   width: 333px;
   height: 68px;
-  border: 2px solid rgba(170, 170, 170, 0.2);
+  border: 2px solid #C4C4C4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 37px;
@@ -530,6 +532,7 @@ footer button {
   width: auto;
   width: 102.39px;
   height: 47px;
+  background: #DA48FF;
 }
 
 footer input:focus {
