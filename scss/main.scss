@@ -1,4 +1,5 @@
 $primary: #6100FF;
+$primary2: #DA48FF;
 $gray: #AAAAAA;
 $color-gradient: linear-gradient(75.96deg, #FFC83A 13.64%, #FF008A 46.53%, #6100FF 78.88%);
 $color-gradient2:linear-gradient(92.05deg, #FFC83A -0.23%, #FF008A 44.41%, #6100FF 112.02%);
@@ -302,10 +303,13 @@ h2 {
     }
  
     }
+    
 }
 footer {
     position: relative;
     width: 100%;
+    background: $dark-color-gradient;
+    padding: 80px 0;
     .nav-background {
         position: absolute;
         width: 100%;
@@ -341,7 +345,7 @@ footer {
         padding-left: 12px;
         width: 333px;
         height: 68px;
-        border: 2px solid rgba(170, 170, 170, 0.2);
+        border: 2px solid #C4C4C4;
         box-sizing: border-box;
         border-radius: $border-radius;
         background: none;
@@ -358,6 +362,7 @@ footer {
         width: auto;
         width: 102.39px;
         height: 47px;
+        background: $primary2;
     }
     input:focus {
         outline: 1px $primary;
