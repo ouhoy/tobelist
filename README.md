@@ -7,3 +7,12 @@ Technologoies that will be used in that project
 🔥ReactJS
 🔥NodeJS
 🔥MongoDB
+
+Pages to finish:
+
+LogIn/SignUp
+Forgot password
+Email activation
+Main tasking page
+
+
