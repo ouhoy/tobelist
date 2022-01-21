@@ -304,6 +304,52 @@ h2 {
     }
  
     }
+
+    .reviews-section {
+        margin: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+ 
+        .reviews-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-top: 60px;
+         .card-review {
+             width: 330px;
+             height: 240px;
+             background: #FFFFFF;
+             border: 1px solid #DCDCDC;
+             box-sizing: border-box;
+             border-radius: 12px;
+             margin-left: 15px
+         }
+        }
+      
+        .reviews-buttons {
+         margin: 60px auto;
+         margin-bottom: 0;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         .lines {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             .slider-point {
+                 margin: 0px 12px ;
+                 width: 45px;
+                 height: 6px;
+                 background: #DBDBDB;
+                 border-radius: 15px;
+             }
+         }}
+    }
+ 
     
 }
 footer {
@@ -559,7 +605,16 @@ main {
                 line-height: 36px;
             }
         }}
-}
+
+
+
+        .reviews-section .reviews-container .card-review {
+            margin-left: 30px;
+            width: 390px;
+            height: 240px;
+        }
+    }
+
 
 footer {
     .tobelist {
@@ -617,12 +672,6 @@ footer {
     .container {
         width: 100%;
     }
-    // .hide-for-desktop {
-    //     display: none !important;
-    // }
-    // .hide-for-tablet {
-    //     display: block ;
-    // }
     .nav-container {
         width:100%;
 
@@ -781,6 +830,8 @@ footer {
        
     }
    }
+
+
    footer {
        padding-bottom: 48px;
        .footer-container {
@@ -821,3 +872,4 @@ footer {
    
    }
 }
+

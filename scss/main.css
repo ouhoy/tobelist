@@ -465,6 +465,83 @@ main .cta-card img {
   margin: 25px 0;
 }
 
+main .reviews-section {
+  margin: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+main .reviews-section .reviews-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+main .reviews-section .reviews-container .card-review {
+  width: 330px;
+  height: 240px;
+  background: #FFFFFF;
+  border: 1px solid #DCDCDC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  margin-left: 15px;
+}
+
+main .reviews-section .reviews-buttons {
+  margin: 60px auto;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .reviews-section .reviews-buttons .lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .reviews-section .reviews-buttons .lines .slider-point {
+  margin: 0px 12px;
+  width: 45px;
+  height: 6px;
+  background: #DBDBDB;
+  border-radius: 15px;
+}
+
 footer {
   position: relative;
   width: 100%;
@@ -764,6 +841,11 @@ footer input:focus {
     font-weight: 500;
     font-size: 28px;
     line-height: 36px;
+  }
+  main .reviews-section .reviews-container .card-review {
+    margin-left: 30px;
+    width: 390px;
+    height: 240px;
   }
   footer .tobelist p {
     font-size: 18px;
