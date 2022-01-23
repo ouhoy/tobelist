@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+.hide {
+  display: none;
+}
+
 p {
   font-style: normal;
   font-weight: 500;
@@ -542,6 +546,60 @@ main .reviews-section .reviews-buttons .lines .slider-point {
   border-radius: 15px;
 }
 
+main .faqs-container {
+  width: 100%;
+}
+
+main .faqs-container .faqs {
+  width: 95%;
+  margin: 0 auto;
+}
+
+main .faqs-container .faqs .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(224, 224, 224, 0.199);
+  border-radius: 12px;
+}
+
+main .faqs-container .faqs .question p {
+  font-size: 14px;
+  color: black;
+  text-align: left;
+}
+
+main .faqs-container .faqs .question .plus {
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+main .faqs-container .faqs .question .plus .line:first-of-type {
+  position: absolute;
+  background-color: #DA48FF;
+  width: 3px;
+  height: 20px;
+  border-radius: 3px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+main .faqs-container .faqs .question .plus .line {
+  background-color: #DA48FF;
+  width: 3px;
+  height: 20px;
+  border-radius: 3px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
 footer {
   position: relative;
   width: 100%;
@@ -614,9 +672,10 @@ footer .footer-link p {
   font-weight: 700;
   font-size: 16px;
   line-height: 28px;
-  background: linear-gradient(75.96deg, #FFC83A 13.64%, #FF008A 46.53%, #6100FF 78.88%);
+  background: linear-gradient(98.55deg, #FFDC81 0.1%, #FFB800 61.36%, #FF008A 98.89%, #FF0000 160.49%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
 }
 
 footer .footer-link a {
