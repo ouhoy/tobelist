@@ -355,21 +355,45 @@ h2 {
  
     .faqs-container {
         width: 100%;
-        
+        margin-bottom: 90px;
+
+        h2 {
+            margin-bottom: 70px;
+            margin-top: 20px;
+        }
         .faqs {
             width: 95%;
+            max-width: 890px;
             margin: 0 auto;
+            .question-border-wrap{
+                padding: 2px 3px;
+               // background: linear-gradient(69.51deg, rgba(255, 200, 58, 0.3) 22.71%, rgba(255, 0, 138, 0.3) 57.7%, rgba(97, 0, 255, 0.3) 94.54%);;
+                border-radius:12px;
+                margin: 15px auto;
+            }
+            .question-container {
+                background: #FCFCFC;
+                border-radius: 12px;
+                p {
+                    font-size: 14px;
+                    color: #353535;
+                    text-align: left;
+                    margin: 0 16px;
+                    margin-bottom: 16px;
+                    padding-bottom: 16px;
+                }
+            }
             .question {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                background: rgba(224, 224, 224, 0.199);
-                border-radius: 12px;
                 p {
-                    font-size: 14px;
+                    margin: 16px;
+                    padding-bottom: 0;
                     color: black;
-                    text-align: left;
+
                 }
+             
                 .plus {
                     position: relative;
                     cursor: pointer;
@@ -378,7 +402,7 @@ h2 {
                         position: absolute;
                         background-color: $primary2;
                         width: 3px;
-                        height: 20px;
+                        height: 20px; 
                         border-radius: 3px;
                         transform: rotate(90deg);}
                     .line {
@@ -667,6 +691,8 @@ main {
     }
 
 
+
+
 footer {
     .tobelist {
         p {
@@ -879,6 +905,9 @@ footer {
         }
         justify-content: space-between;
        
+    }
+    .faqs-container .faqs .question-container p {
+        font-size: 18px;
     }
    }
 

@@ -548,11 +548,38 @@ main .reviews-section .reviews-buttons .lines .slider-point {
 
 main .faqs-container {
   width: 100%;
+  margin-bottom: 90px;
+}
+
+main .faqs-container h2 {
+  margin-bottom: 70px;
+  margin-top: 20px;
 }
 
 main .faqs-container .faqs {
   width: 95%;
+  max-width: 890px;
   margin: 0 auto;
+}
+
+main .faqs-container .faqs .question-border-wrap {
+  padding: 2px 3px;
+  border-radius: 12px;
+  margin: 15px auto;
+}
+
+main .faqs-container .faqs .question-container {
+  background: #FCFCFC;
+  border-radius: 12px;
+}
+
+main .faqs-container .faqs .question-container p {
+  font-size: 14px;
+  color: #353535;
+  text-align: left;
+  margin: 0 16px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 main .faqs-container .faqs .question {
@@ -565,14 +592,12 @@ main .faqs-container .faqs .question {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: rgba(224, 224, 224, 0.199);
-  border-radius: 12px;
 }
 
 main .faqs-container .faqs .question p {
-  font-size: 14px;
+  margin: 16px;
+  padding-bottom: 0;
   color: black;
-  text-align: left;
 }
 
 main .faqs-container .faqs .question .plus {
@@ -1165,6 +1190,9 @@ footer input:focus {
   }
   main .cta-card img {
     width: 400px;
+  }
+  main .faqs-container .faqs .question-container p {
+    font-size: 18px;
   }
   footer {
     padding-bottom: 48px;
