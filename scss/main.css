@@ -5,7 +5,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  color: #060605;
+  color: #252525;
   overflow-x: hidden;
 }
 
@@ -59,11 +59,13 @@ h1 {
 }
 
 h2 {
+  font-family: "Inter";
   font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 36px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
   text-align: center;
+  letter-spacing: -0.04em;
 }
 
 h3 {
@@ -74,7 +76,7 @@ h3 {
 }
 
 a {
-  color: #1e1b1b;
+  color: #252525;
   text-decoration: none;
 }
 
@@ -327,15 +329,39 @@ main section {
 }
 
 main h2 {
-  text-align: center;
-  background: linear-gradient(75.96deg, #ffc83a 13.64%, #ff008a 46.53%, #6100ff 78.88%);
-  display: inherit;
+  color: #ffffff;
 }
 
-main p {
-  color: #aaaaaa;
+main .explore-section {
+  padding-top: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .explore-section h2 {
+  margin-bottom: 16px;
+}
+
+main .explore-section p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 175%;
   text-align: center;
-  margin: 16px;
+  color: #e9e9e9;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+main .explore-section img {
+  width: 1442px;
+  height: 436px;
 }
 
 main .cards .card {
@@ -362,114 +388,6 @@ main .cards .card p {
 main .cards .card h3 {
   text-align: center;
   margin: 20px 0;
-}
-
-main .explore-section {
-  width: 95%;
-  padding: 55px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .explore-section p {
-  color: #e9e9e9;
-}
-
-main .explore-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .explore-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .explore-card .explore-card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .explore-card img {
-  margin: 30px 0;
-}
-
-main .explore-card h3 {
-  font-size: 22px;
-  text-align: center;
-  color: white;
-}
-
-main .explore-card p {
-  color: #e9e9e9;
-  text-align: center;
-  font-weight: 500;
-  margin: 25px 0;
-}
-
-main .explore-card a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  background: linear-gradient(75.96deg, #ffc83a 13.64%, #ff008a 46.53%, #6100ff 78.88%);
-  font-weight: 500;
-  font-size: 14px;
-}
-
-main .explore-card a img {
-  margin: 0;
-  margin-left: 5px;
 }
 
 main .cta-section {
