@@ -1,4 +1,4 @@
-$primary: #6100ff;
+$primary: #195bff;
 $primary2: #da48ff;
 $gray: #aaaaaa;
 $color-gradient: linear-gradient(
@@ -443,7 +443,7 @@ main {
 footer {
   position: relative;
   width: 100%;
-  background: $dark-color-gradient;
+  background: #252525;
   padding: 80px 0;
   padding-bottom: 25px;
   .tobelist {
@@ -478,26 +478,26 @@ footer {
       justify-content: flex-start;
     }
     p {
-      margin-bottom: 5px;
-      font-weight: 700;
+      margin-bottom: 24px;
+      color: #a0a0a0;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
       font-size: 16px;
-      line-height: 28px;
-      background: linear-gradient(
-        98.55deg,
-        #ffdc81 0.1%,
-        #ffb800 61.36%,
-        #ff008a 98.89%,
-        #ff0000 160.49%
-      );
-
-      text-transform: uppercase;
+      line-height: 14px;
+      /* identical to box height, or 88% */
+      text-transform: capitalize;
     }
     a {
-      color: #eeeeee;
+      font-family: "Inter";
+      font-style: normal;
       font-weight: 500;
       font-size: 14px;
-      line-height: 28px;
-      margin: 5px 0;
+      line-height: 14px;
+      /* identical to box height, or 100% */
+      text-transform: capitalize;
+      color: #eeeeee;
+      margin-bottom: 16px;
     }
   }
   .email-cta {
@@ -507,13 +507,17 @@ footer {
     justify-content: center;
     margin-bottom: 56px;
     p {
+      margin-bottom: 24px;
+      /* identical to box height, or 88% */
+      text-transform: capitalize;
+      max-width: $mobile-max-width;
+      text-align: left;
+      font-family: "Inter";
       font-style: normal;
       font-weight: 500;
-      max-width: $mobile-max-width;
       font-size: 14px;
-      text-align: left;
-      line-height: 18px;
-      background: $color-gradient;
+      line-height: 24px;
+      color: #a0a0a0;
     }
   }
   .footer-end {
@@ -551,11 +555,10 @@ footer {
     justify-content: center;
     height: 68px;
     width: $mobile-max-width;
-    margin-top: 16px;
   }
   input {
     position: absolute;
-    padding-left: 12px;
+    padding-left: 24px;
     width: $mobile-max-width;
     height: 68px;
     border: 2px solid #c4c4c4;
@@ -574,7 +577,7 @@ footer {
     width: auto;
     width: 102.39px;
     height: 47px;
-    background: $primary2;
+    background: $primary;
   }
   input:focus {
     outline: 1px $primary;

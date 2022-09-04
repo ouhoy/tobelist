@@ -612,7 +612,7 @@ main .faqs-container .faqs .question .plus .line {
 footer {
   position: relative;
   width: 100%;
-  background: linear-gradient(312.16deg, #070718 19.71%, #40404f 93.55%);
+  background: #252525;
   padding: 80px 0;
   padding-bottom: 25px;
 }
@@ -679,20 +679,27 @@ footer .footer-link .help {
 }
 
 footer .footer-link p {
-  margin-bottom: 5px;
-  font-weight: 700;
+  margin-bottom: 24px;
+  color: #a0a0a0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 28px;
-  background: linear-gradient(98.55deg, #ffdc81 0.1%, #ffb800 61.36%, #ff008a 98.89%, #ff0000 160.49%);
-  text-transform: uppercase;
+  line-height: 14px;
+  /* identical to box height, or 88% */
+  text-transform: capitalize;
 }
 
 footer .footer-link a {
-  color: #eeeeee;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 28px;
-  margin: 5px 0;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+  text-transform: capitalize;
+  color: #eeeeee;
+  margin-bottom: 16px;
 }
 
 footer .email-cta {
@@ -713,13 +720,17 @@ footer .email-cta {
 }
 
 footer .email-cta p {
+  margin-bottom: 24px;
+  /* identical to box height, or 88% */
+  text-transform: capitalize;
+  max-width: 95%;
+  text-align: left;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  max-width: 95%;
   font-size: 14px;
-  text-align: left;
-  line-height: 18px;
-  background: linear-gradient(75.96deg, #ffc83a 13.64%, #ff008a 46.53%, #6100ff 78.88%);
+  line-height: 24px;
+  color: #a0a0a0;
 }
 
 footer .footer-end {
@@ -780,12 +791,11 @@ footer form {
           justify-content: center;
   height: 68px;
   width: 95%;
-  margin-top: 16px;
 }
 
 footer input {
   position: absolute;
-  padding-left: 12px;
+  padding-left: 24px;
   width: 95%;
   height: 68px;
   border: 2px solid #c4c4c4;
@@ -807,12 +817,12 @@ footer button {
   width: auto;
   width: 102.39px;
   height: 47px;
-  background: #da48ff;
+  background: #195bff;
 }
 
 footer input:focus {
-  outline: 1px #6100ff;
-  border: 2px solid #6100ff;
+  outline: 1px #195bff;
+  border: 2px solid #195bff;
 }
 
 .hide-for-mobile {
