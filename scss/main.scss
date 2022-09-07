@@ -18,7 +18,7 @@ $dark-color-gradient: linear-gradient(
   #070718 19.71%,
   #40404f 93.55%
 );
-$border-radius: 37px;
+$border-radius: 32px;
 $body-02: 16px;
 $mobile-max-width: 95%;
 
@@ -29,7 +29,6 @@ $mobile-max-width: 95%;
 body {
   font-family: "Inter", sans-serif;
   color: #252525;
-  overflow-x: hidden;
 }
 .hide {
   display: none;
@@ -274,7 +273,40 @@ main {
       height: 436px;
     }
   }
-
+  .demo-section {
+    margin: 136px auto;
+    .title-description {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      max-width: 1280px;
+      h3 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 24px;
+        letter-spacing: -0.04em;
+        color: #252525;
+        span {
+          color: #195bff;
+        }
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #313234;
+        max-width: 516px;
+      }
+    }
+    img {
+      margin-top: 56px;
+    }
+  }
   .cta-section {
     width: 95%;
   }
@@ -321,6 +353,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
+    overflow-x: hidden;
     p {
       font-family: "Inter";
       font-style: normal;
@@ -445,11 +478,15 @@ footer {
     align-items: center;
     justify-content: center;
     p {
-      margin-top: 18px;
-      font-size: 16px;
-      color: #e9e9e9;
+      margin-top: 16px;
       max-width: $mobile-max-width;
       text-align: center;
+      font-family: "Inter";
+      font-style: normal;
+      line-height: 175%;
+      /* or 32px */
+
+      color: #e9e9e9;
     }
   }
   .footer-link {
@@ -553,13 +590,17 @@ footer {
     position: absolute;
     padding-left: 24px;
     width: $mobile-max-width;
-    height: 68px;
+    height: 64px;
     border: 2px solid #c4c4c4;
     box-sizing: border-box;
     border-radius: $border-radius;
     background: none;
     transition: 0.2s ease-in-out;
     color: rgb(255, 255, 255);
+    &:focus {
+      outline: 1px #fcfcfc;
+      border: 2px solid #fcfcfc;
+    }
   }
   button {
     position: absolute;
@@ -568,13 +609,10 @@ footer {
     font-size: 16px;
     line-height: 175%;
     width: auto;
-    width: 102.39px;
-    height: 47px;
+    padding: 16px 40px;
+    width: 112px;
+    height: 48px;
     background: $primary;
-  }
-  input:focus {
-    outline: 1px $primary;
-    border: 2px solid $primary;
   }
 }
 .hide-for-mobile {
@@ -683,7 +721,6 @@ footer {
   footer {
     .tobelist {
       p {
-        font-size: 18px;
         max-width: 90%;
       }
     }

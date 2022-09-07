@@ -6,7 +6,6 @@
 body {
   font-family: "Inter", sans-serif;
   color: #252525;
-  overflow-x: hidden;
 }
 
 .hide {
@@ -45,7 +44,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 48px;
-  border-radius: 37px;
+  border-radius: 32px;
   width: 100%;
 }
 
@@ -364,6 +363,52 @@ main .explore-section img {
   height: 436px;
 }
 
+main .demo-section {
+  margin: 136px auto;
+}
+
+main .demo-section .title-description {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1280px;
+}
+
+main .demo-section .title-description h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  color: #252525;
+}
+
+main .demo-section .title-description h3 span {
+  color: #195bff;
+}
+
+main .demo-section .title-description p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #313234;
+  max-width: 516px;
+}
+
+main .demo-section img {
+  margin-top: 56px;
+}
+
 main .cta-section {
   width: 95%;
 }
@@ -443,6 +488,7 @@ main .reviews-section {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  overflow-x: hidden;
 }
 
 main .reviews-section p {
@@ -619,11 +665,14 @@ footer .tobelist {
 }
 
 footer .tobelist p {
-  margin-top: 18px;
-  font-size: 16px;
-  color: #e9e9e9;
+  margin-top: 16px;
   max-width: 95%;
   text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 175%;
+  /* or 32px */
+  color: #e9e9e9;
 }
 
 footer .footer-link {
@@ -782,15 +831,20 @@ footer input {
   position: absolute;
   padding-left: 24px;
   width: 95%;
-  height: 68px;
+  height: 64px;
   border: 2px solid #c4c4c4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 37px;
+  border-radius: 32px;
   background: none;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   color: white;
+}
+
+footer input:focus {
+  outline: 1px #fcfcfc;
+  border: 2px solid #fcfcfc;
 }
 
 footer button {
@@ -800,14 +854,10 @@ footer button {
   font-size: 16px;
   line-height: 175%;
   width: auto;
-  width: 102.39px;
-  height: 47px;
+  padding: 16px 40px;
+  width: 112px;
+  height: 48px;
   background: #195bff;
-}
-
-footer input:focus {
-  outline: 1px #195bff;
-  border: 2px solid #195bff;
 }
 
 .hide-for-mobile {
@@ -907,7 +957,6 @@ footer input:focus {
     height: 240px;
   }
   footer .tobelist p {
-    font-size: 18px;
     max-width: 90%;
   }
   footer .footer-link {
