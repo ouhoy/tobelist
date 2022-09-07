@@ -308,41 +308,35 @@ main {
     }
   }
   .cta-section {
-    width: 95%;
-  }
-  .cta-card {
-    box-sizing: border-box;
-    border-radius: 37px;
     width: 100%;
+    background-color: #252525;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 70px 0;
-    .cta-card-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      h2 {
-        max-width: 354px;
-      }
-      p {
-        margin: 25px 0;
-        width: 98%;
-        max-width: 400px;
-        color: #dfdfdf;
-      }
-      button {
-        margin-bottom: 25px;
-        width: 55%;
-        background: $color-gradient2;
+    justify-content: space-between;
+    padding: 80px 112px;
+    border-radius: 16px;
+    max-width: 1056px;
+    h4 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+      max-width: 414px;
+      span {
+        color: #195bff;
       }
     }
-    img {
-      width: 250px;
-      margin: 25px 0;
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #e9e9e9;
+      max-width: 405px;
     }
   }
 
@@ -874,10 +868,6 @@ footer {
       }
     }
 
-    .cta-section {
-      width: 100%;
-      max-width: 1280px;
-    }
     .cta-card {
       max-width: 1040px;
       padding: 0 33px;

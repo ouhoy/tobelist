@@ -410,66 +410,45 @@ main .demo-section img {
 }
 
 main .cta-section {
-  width: 95%;
-}
-
-main .cta-card {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 37px;
   width: 100%;
+  background-color: #252525;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 70px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 112px;
+  border-radius: 16px;
+  max-width: 1056px;
 }
 
-main .cta-card .cta-card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+main .cta-section h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  max-width: 414px;
 }
 
-main .cta-card .cta-card-content h2 {
-  max-width: 354px;
+main .cta-section h4 span {
+  color: #195bff;
 }
 
-main .cta-card .cta-card-content p {
-  margin: 25px 0;
-  width: 98%;
-  max-width: 400px;
-  color: #dfdfdf;
-}
-
-main .cta-card .cta-card-content button {
-  margin-bottom: 25px;
-  width: 55%;
-  background: linear-gradient(92.05deg, #ffc83a -0.23%, #ff008a 44.41%, #6100ff 112.02%);
-}
-
-main .cta-card img {
-  width: 250px;
-  margin: 25px 0;
+main .cta-section p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e9e9e9;
+  max-width: 405px;
 }
 
 main .reviews-section {
@@ -1161,10 +1140,6 @@ footer button {
         -ms-flex-pack: start;
             justify-content: flex-start;
     text-align: left;
-  }
-  main .cta-section {
-    width: 100%;
-    max-width: 1280px;
   }
   main .cta-card {
     max-width: 1040px;
