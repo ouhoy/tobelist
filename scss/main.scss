@@ -61,7 +61,7 @@ button {
 h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 56px;
   line-height: 43px;
   text-align: center;
   letter-spacing: -0.02em;
@@ -348,6 +348,7 @@ main {
     justify-content: center;
     width: 100%;
     overflow-x: hidden;
+
     p {
       font-family: "Inter";
       font-style: normal;
@@ -398,11 +399,12 @@ main {
 
   .faqs-container {
     width: 100%;
-    margin-bottom: 90px;
+    margin-top: 136px;
+    margin-bottom: 136px;
 
     h2 {
-      margin-bottom: 70px;
-      margin-top: 20px;
+      margin-bottom: 58px;
+      color: #252525;
     }
     .faqs {
       width: 95%;
@@ -410,13 +412,16 @@ main {
       margin: 0 auto;
       .question-border-wrap {
         padding: 2px 3px;
-        // background: linear-gradient(69.51deg, rgba(255, 200, 58, 0.3) 22.71%, rgba(255, 0, 138, 0.3) 57.7%, rgba(97, 0, 255, 0.3) 94.54%);;
-        border-radius: 12px;
-        margin: 15px auto;
       }
+
+      .question-border-wrap:not(:last-child) {
+        margin-bottom: 24px;
+      }
+
       .question-container {
         background: #fcfcfc;
-        border-radius: 12px;
+        border-radius: 8px;
+        outline: 1px solid#E0E0E0;
         p {
           font-size: 14px;
           color: #353535;
@@ -439,19 +444,26 @@ main {
         .plus {
           position: relative;
           cursor: pointer;
-          margin-right: 20px;
+          margin-right: 24px;
+          width: 16px;
+          height: 16px;
           .line:first-of-type {
             position: absolute;
-            background-color: $primary2;
+            right: 7px;
+
+            background-color: $primary;
             width: 3px;
-            height: 20px;
+            height: 16px;
             border-radius: 3px;
             transform: rotate(90deg);
           }
           .line {
-            background-color: $primary2;
+            background-color: $primary;
+            position: absolute;
+            right: 7px;
+
             width: 3px;
-            height: 20px;
+            height: 16px;
             border-radius: 3px;
             transition: 200ms ease-in-out;
           }
@@ -625,21 +637,7 @@ footer {
   .hide-for-tablet {
     display: none;
   }
-  h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 82px;
-    text-align: center;
-    letter-spacing: -0.02em;
-  }
-  h2 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 54px;
-    line-height: 69px;
-    text-align: center;
-  }
+
   button {
     font-size: 22px;
     width: auto;

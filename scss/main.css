@@ -51,7 +51,7 @@ button {
 h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 56px;
   line-height: 43px;
   text-align: center;
   letter-spacing: -0.02em;
@@ -542,12 +542,13 @@ main .reviews-section .reviews-buttons .lines .slider-point {
 
 main .faqs-container {
   width: 100%;
-  margin-bottom: 90px;
+  margin-top: 136px;
+  margin-bottom: 136px;
 }
 
 main .faqs-container h2 {
-  margin-bottom: 70px;
-  margin-top: 20px;
+  margin-bottom: 58px;
+  color: #252525;
 }
 
 main .faqs-container .faqs {
@@ -558,13 +559,16 @@ main .faqs-container .faqs {
 
 main .faqs-container .faqs .question-border-wrap {
   padding: 2px 3px;
-  border-radius: 12px;
-  margin: 15px auto;
+}
+
+main .faqs-container .faqs .question-border-wrap:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 main .faqs-container .faqs .question-container {
   background: #fcfcfc;
-  border-radius: 12px;
+  border-radius: 8px;
+  outline: 1px solid #E0E0E0;
 }
 
 main .faqs-container .faqs .question-container p {
@@ -597,23 +601,28 @@ main .faqs-container .faqs .question p {
 main .faqs-container .faqs .question .plus {
   position: relative;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 24px;
+  width: 16px;
+  height: 16px;
 }
 
 main .faqs-container .faqs .question .plus .line:first-of-type {
   position: absolute;
-  background-color: #da48ff;
+  right: 7px;
+  background-color: #195bff;
   width: 3px;
-  height: 20px;
+  height: 16px;
   border-radius: 3px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
 main .faqs-container .faqs .question .plus .line {
-  background-color: #da48ff;
+  background-color: #195bff;
+  position: absolute;
+  right: 7px;
   width: 3px;
-  height: 20px;
+  height: 16px;
   border-radius: 3px;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
@@ -849,21 +858,6 @@ footer button {
   }
   .hide-for-tablet {
     display: none;
-  }
-  h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 82px;
-    text-align: center;
-    letter-spacing: -0.02em;
-  }
-  h2 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 54px;
-    line-height: 69px;
-    text-align: center;
   }
   button {
     font-size: 22px;
