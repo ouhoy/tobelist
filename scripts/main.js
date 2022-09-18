@@ -21,7 +21,11 @@ hamburgerMenu.addEventListener("click", () => {
 
 faqs.addEventListener("click", function (e) {
   if (e.target.closest(".question-container")) {
-    console.log("ok");
+    // $(".question-container", true).forEach((el) => {
+    //   el.classList.contains("show-question") &&
+    //     el.classList.remove("show-question");
+    // });
+
     e.target.closest(".question-container").classList.toggle("show-question");
     e.target
       .closest(".question-container")

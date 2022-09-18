@@ -1,30 +1,15 @@
 $primary: #195bff;
 $primary2: #da48ff;
 $gray: #aaaaaa;
-$color-gradient: linear-gradient(
-  75.96deg,
-  #ffc83a 13.64%,
-  #ff008a 46.53%,
-  #6100ff 78.88%
-);
-$color-gradient2: linear-gradient(
-  92.05deg,
-  #ffc83a -0.23%,
-  #ff008a 44.41%,
-  #6100ff 112.02%
-);
-$dark-color-gradient: linear-gradient(
-  312.16deg,
-  #070718 19.71%,
-  #40404f 93.55%
-);
 $border-radius: 32px;
 $body-02: 16px;
+$med-max-width: 1280px;
 $mobile-max-width: 95%;
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Inter", sans-serif;
@@ -423,10 +408,12 @@ main {
       max-width: 890px;
       margin: 0 auto;
       .question-border-wrap {
+        cursor: pointer;
         padding: 2px 3px;
       }
       .show-question {
-        height: 12rem !important;
+        height: 100%;
+        height: calc(0% + 50px) !important;
       }
       .rotate-line {
         transform: rotate(90deg) !important;
@@ -442,7 +429,7 @@ main {
         background: #fcfcfc;
         outline: 1px solid#E0E0E0;
         border-radius: 8px;
-        transition: height 0.5s ease-in-out;
+        // transition: height 0.5s ease-in-out;
 
         p {
           font-size: 14px;
@@ -537,7 +524,7 @@ footer {
     }
     p {
       margin-bottom: 24px;
-      color: #a0a0a0;
+      color: #eeeeee;
       font-family: "Inter";
       font-style: normal;
       font-weight: 500;
@@ -554,8 +541,13 @@ footer {
       line-height: 14px;
       /* identical to box height, or 100% */
       text-transform: capitalize;
-      color: #eeeeee;
       margin-bottom: 16px;
+      color: #a0a0a0;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: #eeeeee;
+        text-decoration: underline;
+      }
     }
   }
   .email-cta {
@@ -585,6 +577,7 @@ footer {
 
     .additional-links {
       width: $mobile-max-width;
+      max-width: $med-max-width;
       border-top: 1px solid #c4c4c4;
       display: flex;
       flex-direction: column;
@@ -599,6 +592,11 @@ footer {
       a {
         font-size: 10px;
         color: #e9e9e9;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: #eeeeee;
+          text-decoration: underline;
+        }
       }
       a:first-of-type {
         margin-right: 5px;
