@@ -29,7 +29,6 @@ button {
   border: none;
   cursor: pointer;
   color: white;
-  background: $dark-color-gradient;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -54,7 +53,7 @@ h1 {
 h2 {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 48px;
   line-height: 56px;
   text-align: center;
@@ -232,7 +231,10 @@ main {
   h2 {
     color: #ffffff;
   }
-
+  .explore,
+  .reviews {
+    background-color: #252525;
+  }
   .explore-section {
     padding-top: 96px;
     display: flex;
@@ -310,9 +312,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 112px;
+    padding: 88px 112px;
     border-radius: 16px;
-    max-width: 1056px;
+    max-width: $med-max-width;
     h4 {
       font-family: "Inter";
       font-style: normal;
@@ -398,10 +400,26 @@ main {
     width: 100%;
     margin-top: 136px;
     margin-bottom: 136px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h2 {
-      margin-bottom: 58px;
       color: #252525;
+      margin-bottom: 24px;
+    }
+    & > p {
+      margin-bottom: 58px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #313234;
+      text-align: center;
+      a {
+        text-decoration: underline;
+      }
     }
     .faqs {
       width: 95%;
@@ -430,7 +448,10 @@ main {
         outline: 1px solid#E0E0E0;
         border-radius: 8px;
         // transition: height 0.5s ease-in-out;
-
+        p.faqs-text {
+          padding-left: 24px;
+          color: #505050 !important;
+        }
         p {
           font-size: 14px;
           color: #353535;
