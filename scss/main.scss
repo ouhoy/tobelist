@@ -1,5 +1,5 @@
 $primary: #195bff;
-$primary2: #da48ff;
+$dark: #252525;
 $gray: #aaaaaa;
 $border-radius: 32px;
 $body-02: 16px;
@@ -449,7 +449,7 @@ main {
         border-radius: 8px;
         // transition: height 0.5s ease-in-out;
         p.faqs-text {
-          padding-left: 24px;
+          padding-left: 16px;
           color: #505050 !important;
         }
         p {
@@ -574,21 +574,19 @@ footer {
   .email-cta {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-bottom: 56px;
     p {
-      margin-bottom: 24px;
-      /* identical to box height, or 88% */
+      margin-bottom: 22px;
       text-transform: capitalize;
-      max-width: $mobile-max-width;
       text-align: left;
       font-family: "Inter";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
-      line-height: 24px;
-      color: #a0a0a0;
+      line-height: 16px;
+      color: #eeeeee;
     }
   }
   .footer-end {
