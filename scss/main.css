@@ -326,6 +326,36 @@ main .cta-section p {
   color: #e9e9e9;
   max-width: 405px;
 }
+main .devices-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 152px 0;
+}
+main .devices-section h4 {
+  max-width: 304px;
+  max-height: 80px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  color: #252525;
+  margin-bottom: 24px;
+}
+main .devices-section h4 span {
+  color: #195bff;
+}
+main .devices-section p {
+  width: 405px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #313234;
+}
 main .reviews-section {
   margin: 72px auto;
   display: flex;
