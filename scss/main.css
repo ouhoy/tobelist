@@ -70,6 +70,15 @@ a {
   text-decoration: none;
 }
 
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section {
+  transition: transform 0.5s, opacity 0.5s;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
