@@ -75,6 +75,16 @@ a {
   transform: translateY(8rem);
 }
 
+.section--hidden-right {
+  opacity: 0;
+  transform: translateX(8rem);
+}
+
+.section--hidden-left {
+  opacity: 0;
+  transform: translateX(-8rem);
+}
+
 .section {
   transition: transform 0.5s, opacity 0.5s;
 }
@@ -99,7 +109,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 72px;
   width: 100%;
 }
 nav img {
