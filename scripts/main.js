@@ -1,3 +1,5 @@
+import { Slider } from "./fastSlider.js";
+
 function $(id, slectAll = false) {
   return slectAll ? document.querySelectorAll(id) : document.querySelector(id);
 }
@@ -45,3 +47,9 @@ sections.forEach((section) => {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
+
+// const reviewSlider = new Slider(".slider-container");
+// document.body.addEventListener("keydown", (e) => {
+//   e.key === "ArrowLeft" && reviewSlider.prevSlide();
+//   e.key === "ArrowRight" && reviewSlider.nextSlide();
+// });

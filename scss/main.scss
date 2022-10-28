@@ -408,19 +408,21 @@ main {
       margin-top: 16px;
     }
     .reviews-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
       margin-top: 64px;
-      .card-review {
-        width: 330px;
-        height: 240px;
-        background: #ffffff;
-        border: 1px solid #dcdcdc;
-        box-sizing: border-box;
-        border-radius: 12px;
-        margin-left: 15px;
+      overflow: hidden;
+      .slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .card-review {
+          width: 330px;
+          height: 240px;
+          background: #ffffff;
+          border: 1px solid #dcdcdc;
+          box-sizing: border-box;
+          border-radius: 12px;
+          margin-left: 15px;
+        }
       }
     }
 

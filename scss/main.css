@@ -395,13 +395,15 @@ main .reviews-section p {
   margin-top: 16px;
 }
 main .reviews-section .reviews-container {
+  margin-top: 64px;
+  overflow: hidden;
+}
+main .reviews-section .reviews-container .slider {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  margin-top: 64px;
 }
-main .reviews-section .reviews-container .card-review {
+main .reviews-section .reviews-container .slider .card-review {
   width: 330px;
   height: 240px;
   background: #ffffff;
