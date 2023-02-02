@@ -49,7 +49,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -119,7 +119,7 @@ nav .cta a {
   font-weight: 500;
 }
 nav .cta button {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -157,14 +157,14 @@ header .header-content {
   justify-content: center;
 }
 header h1 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
   line-height: 77px;
 }
 header p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -177,7 +177,7 @@ header p {
 header button {
   background: #195bff;
   border-radius: 32px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -193,7 +193,7 @@ header img {
   height: 482.5px;
 }
 header .numbers {
-  width: 320px;
+  width: 400px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -205,7 +205,7 @@ header .numbers .num {
   justify-content: center;
 }
 header .numbers .num h4 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 31px;
@@ -217,7 +217,7 @@ header .numbers .num h4 {
   margin-bottom: 8px;
 }
 header .numbers .num p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13.33px;
@@ -256,15 +256,14 @@ main .explore-section h2 {
   margin-bottom: 16px;
 }
 main .explore-section p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 175%;
   text-align: center;
   color: #e9e9e9;
-  margin: 0 auto;
-  margin-bottom: 64px;
+  margin: 0 auto 64px;
 }
 main .explore-section img {
   width: 1442px;
@@ -281,7 +280,7 @@ main .demo-section .title-description {
   max-width: 1280px;
 }
 main .demo-section .title-description h3 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -293,7 +292,7 @@ main .demo-section .title-description h3 span {
   color: #195bff;
 }
 main .demo-section .title-description p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -324,7 +323,7 @@ main .cta-section {
   max-width: 1280px;
 }
 main .cta-section h4 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -337,7 +336,7 @@ main .cta-section h4 span {
   color: #195bff;
 }
 main .cta-section p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -366,7 +365,7 @@ main .devices-section h4 span {
 }
 main .devices-section p {
   width: 405px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -385,7 +384,7 @@ main .reviews-section {
   overflow-x: hidden;
 }
 main .reviews-section p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -399,13 +398,21 @@ main .reviews-section .reviews-container {
   overflow: hidden;
 }
 main .reviews-section .reviews-container .slider {
+  width: 100vw;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+main .reviews-section .reviews-container .slider .slide {
+  width: 100%;
+  height: 100%;
 }
 main .reviews-section .reviews-container .slider .card-review {
-  width: 330px;
-  height: 240px;
+  min-width: 400px;
   background: #ffffff;
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
@@ -413,8 +420,7 @@ main .reviews-section .reviews-container .slider .card-review {
   margin-left: 15px;
 }
 main .reviews-section .reviews-buttons {
-  margin: 32px auto;
-  margin-bottom: 0;
+  margin: 32px auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -425,7 +431,7 @@ main .reviews-section .reviews-buttons .lines {
   justify-content: center;
 }
 main .reviews-section .reviews-buttons .lines .slider-point {
-  margin: 0px 12px;
+  margin: 0 12px;
   width: 45px;
   height: 6px;
   background: #dbdbdb;
@@ -445,7 +451,7 @@ main .faqs-container h2 {
 }
 main .faqs-container > p {
   margin-bottom: 58px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -466,7 +472,6 @@ main .faqs-container .faqs .question-border-wrap {
   padding: 2px 3px;
 }
 main .faqs-container .faqs .show-question {
-  height: 100%;
   height: calc(0% + 50px) !important;
 }
 main .faqs-container .faqs .rotate-line {
@@ -490,8 +495,7 @@ main .faqs-container .faqs .question-container p {
   font-size: 14px;
   color: #353535;
   text-align: left;
-  margin: 0 16px;
-  margin-bottom: 16px;
+  margin: 0 16px 16px;
   padding-bottom: 16px;
 }
 main .faqs-container .faqs .question {
@@ -534,8 +538,7 @@ footer {
   position: relative;
   width: 100%;
   background: #252525;
-  padding: 80px 0;
-  padding-bottom: 25px;
+  padding: 80px 0 25px;
 }
 footer .tobelist {
   display: flex;
@@ -547,7 +550,7 @@ footer .tobelist p {
   margin-top: 16px;
   max-width: 95%;
   text-align: center;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   line-height: 175%;
   /* or 32px */
@@ -559,7 +562,6 @@ footer .footer-link {
   max-width: 95%;
   margin: 56px auto;
   justify-content: space-between;
-  max-width: 95%;
 }
 footer .footer-link .team {
   margin: 0;
@@ -575,7 +577,7 @@ footer .footer-link .help {
 footer .footer-link p {
   margin-bottom: 24px;
   color: #eeeeee;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -584,7 +586,7 @@ footer .footer-link p {
   text-transform: capitalize;
 }
 footer .footer-link a {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -610,7 +612,7 @@ footer .email-cta p {
   margin-bottom: 22px;
   text-transform: capitalize;
   text-align: left;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -678,7 +680,6 @@ footer button {
   font-weight: 500;
   font-size: 16px;
   line-height: 175%;
-  width: auto;
   padding: 16px 40px;
   width: 112px;
   height: 48px;
@@ -740,8 +741,6 @@ footer button {
     font-size: 38px;
     line-height: 45px;
     text-align: left;
-    font-size: 38px;
-    line-height: 45px;
     letter-spacing: -0.045em;
   }
   main .cta-card .cta-card-content p {
@@ -787,7 +786,7 @@ footer button {
     color: #e9e9e9;
   }
   footer form,
-footer input {
+  footer input {
     width: 405px;
   }
   footer button {
@@ -862,7 +861,7 @@ footer input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     margin-top: 24px;
     margin-bottom: 24px;
   }
@@ -891,7 +890,7 @@ footer input {
     align-items: flex-start;
   }
   main .explore-container .explore-card h3,
-main .explore-container .explore-card p {
+  main .explore-container .explore-card p {
     text-align: left;
   }
   main .explore-container .explore-card a {
@@ -945,7 +944,7 @@ main .explore-container .explore-card p {
     text-align: left;
   }
   footer .footer-end .additional-links p,
-footer .footer-end .additional-links a {
+  footer .footer-end .additional-links a {
     font-size: 12px;
   }
   footer .footer-link {
@@ -954,9 +953,10 @@ footer .footer-end .additional-links a {
     max-width: 95%;
     margin: 0 auto;
     justify-content: space-between;
-    max-width: auto;
   }
   footer .footer-link .team {
     margin: 0 30px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
