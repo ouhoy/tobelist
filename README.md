@@ -3,7 +3,8 @@ Tobelist is the ultimate form of boosting productivity. Unlike many other tools 
 
 Technologoies that will be used in that project
 
-🔥JavaScript
+
+🔥TypeScript
 🔥ReactJS
 🔥NodeJS
 🔥MongoDB
