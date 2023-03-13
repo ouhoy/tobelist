@@ -18,7 +18,6 @@ faqs.addEventListener("click", function (e) {
         .children[0].children[1].children[1].classList.toggle("rotate-line");
 });
 
-/*
 
 //Show Sections On Scroll
 const sections = $(".section", true);
@@ -47,7 +46,6 @@ sections.forEach((section) => {
     section.classList.add("section--hidden");
 });
 
- */
 const reviewSlider = new Slider(".slider-container");
 document.body.addEventListener("keydown", (e) => {
     e.key === "ArrowLeft" && reviewSlider.prevSlide();
