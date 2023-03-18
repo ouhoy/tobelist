@@ -393,26 +393,19 @@ main .reviews-section p {
   color: #e9e9e9;
   margin-top: 16px;
 }
-main .reviews-section .reviews-container {
+main .reviews-section .slider-container {
+  width: 100vw;
   margin-top: 64px;
   overflow: hidden;
 }
-main .reviews-section .reviews-container .slider {
-  width: 100vw;
+main .reviews-section .slider-container .slider {
+  width: 420px;
   height: 240px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
-main .reviews-section .reviews-container .slider .slide {
-  width: 100%;
-  height: 100%;
-}
-main .reviews-section .reviews-container .slider .card-review {
-  min-width: 400px;
+main .reviews-section .slider-container .slider .card-review {
+  width: 400px;
+  height: 240px;
   background: #ffffff;
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
