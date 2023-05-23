@@ -454,6 +454,10 @@ main .faqs-container > p {
 }
 main .faqs-container > p a {
   text-decoration: underline;
+  transition: 0.2s ease-in-out;
+}
+main .faqs-container > p a:hover {
+  font-style: italic;
 }
 main .faqs-container .faqs {
   width: 95%;

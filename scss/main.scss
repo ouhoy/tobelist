@@ -524,6 +524,12 @@ main {
 
       a {
         text-decoration: underline;
+        //animation: .2s ease-in-out;
+        transition: .2s ease-in-out;
+
+        &:hover {
+          font-style: italic;
+        }
       }
     }
 
