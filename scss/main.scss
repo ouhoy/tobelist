@@ -120,8 +120,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
 }
+
 
 nav {
   display: flex;
@@ -129,33 +130,62 @@ nav {
   justify-content: space-between;
   height: 72px;
   width: 100%;
+  max-width: 1280px;
+
+  button {
+    font-weight: 500;
+    padding: 16px 32px;
+    width: 153px;
+    height: 48px;
+  }
 
   img {
     cursor: pointer;
   }
 
-  .cta {
-    a {
-      font-weight: 500;
+  .menu-cta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .menu {
+      margin-right: 40px;
+      border-right: 1px $gray solid;
+
+      a {
+        margin-right: 40px;
+        font-weight: 500;
+      }
     }
 
-    button {
-      font-family: "Inter", sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 175%;
-      color: #ffffff;
+    .cta {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
       align-items: center;
-      padding: 16px 32px;
-      gap: 10px;
-      width: 153px;
-      height: 48px;
-      background: #195bff;
-      border-radius: 32px;
+      justify-content: center;
+
+      a {
+        margin-right: 40px;
+        font-weight: 500;
+      }
+
+      button {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 175%;
+        color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 32px;
+        gap: 10px;
+        width: 153px;
+        height: 48px;
+        background: #195bff;
+        border-radius: 32px;
+      }
     }
   }
 
@@ -822,12 +852,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  // .hide-for-tablet {
-  //     display: none !important;
-  // }
-  // .hide-for-mobile {
-  //     display: block;
-  // }
+
   .hide-for-mobile {
     display: block;
   }
@@ -964,46 +989,7 @@ footer {
   .container {
     width: 100%;
   }
-  .nav-container {
-    width: 100%;
-  }
-  nav {
-    max-width: 1280px;
 
-    button {
-      font-weight: 500;
-      padding: 16px 32px;
-      width: 153px;
-      height: 48px;
-    }
-
-    .menu-cta {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-
-      .menu {
-        margin-right: 40px;
-        border-right: 1px $gray solid;
-
-        a {
-          margin-right: 40px;
-          font-weight: 500;
-        }
-      }
-
-      .cta {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        a {
-          margin-right: 40px;
-          font-weight: 500;
-        }
-      }
-    }
-  }
   .hide-for-mobile {
     display: block;
   }

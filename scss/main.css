@@ -109,7 +109,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
 }
 
 nav {
@@ -118,14 +118,40 @@ nav {
   justify-content: space-between;
   height: 72px;
   width: 100%;
+  max-width: 1280px;
+}
+nav button {
+  font-weight: 500;
+  padding: 16px 32px;
+  width: 153px;
+  height: 48px;
 }
 nav img {
   cursor: pointer;
 }
-nav .cta a {
+nav .menu-cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav .menu-cta .menu {
+  margin-right: 40px;
+  border-right: 1px #aaaaaa solid;
+}
+nav .menu-cta .menu a {
+  margin-right: 40px;
   font-weight: 500;
 }
-nav .cta button {
+nav .menu-cta .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .menu-cta .cta a {
+  margin-right: 40px;
+  font-weight: 500;
+}
+nav .menu-cta .cta button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -807,40 +833,6 @@ footer button {
 @media screen and (min-width: 65em) {
   .container {
     width: 100%;
-  }
-  .nav-container {
-    width: 100%;
-  }
-  nav {
-    max-width: 1280px;
-  }
-  nav button {
-    font-weight: 500;
-    padding: 16px 32px;
-    width: 153px;
-    height: 48px;
-  }
-  nav .menu-cta {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  nav .menu-cta .menu {
-    margin-right: 40px;
-    border-right: 1px #aaaaaa solid;
-  }
-  nav .menu-cta .menu a {
-    margin-right: 40px;
-    font-weight: 500;
-  }
-  nav .menu-cta .cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  nav .menu-cta .cta a {
-    margin-right: 40px;
-    font-weight: 500;
   }
   .hide-for-mobile {
     display: block;
