@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #252525;
+}
+
+.hide-for-desktop {
+  display: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.035em;
+  line-height: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 48px;
+  border-radius: 32px;
+  width: 100%;
+}
+
+a {
+  color: #252525;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  width: 100%;
+  max-width: 1280px;
+}
+nav img {
+  cursor: pointer;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .menu-cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav .menu-cta .menu {
+  margin-right: 40px;
+  border-right: 1px #aaaaaa solid;
+}
+nav .menu-cta .menu a {
+  margin-right: 40px;
+  font-weight: 500;
+}
+nav .menu-cta .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .menu-cta .cta a {
+  margin-right: 40px;
+  font-weight: 500;
+}
+nav .menu-cta .cta button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  width: 153px;
+  height: 48px;
+  background: #195bff;
+  border-radius: 32px;
+}
+
+/*# sourceMappingURL=main.css.map */
