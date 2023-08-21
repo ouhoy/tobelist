@@ -21,7 +21,6 @@ button {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  letter-spacing: -0.035em;
   line-height: 23px;
   display: flex;
   flex-direction: row;
@@ -105,13 +104,12 @@ nav .menu-cta .cta button {
   line-height: 175%;
   color: white;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 16px 32px;
   gap: 10px;
-  width: 153px;
-  height: 48px;
+  width: 144px;
+  height: 40px;
   background: #195bff;
   border-radius: 32px;
 }
