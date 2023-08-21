@@ -30,6 +30,11 @@ button {
   padding: 20px 48px;
   border-radius: 32px;
   width: 100%;
+  transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+  background-color: #1752E6 !important;
 }
 
 a {
