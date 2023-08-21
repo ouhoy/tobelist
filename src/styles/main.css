@@ -32,9 +32,12 @@ button {
   width: 100%;
   transition: all 0.1s ease-in-out;
 }
-
 button:hover {
   background-color: #1752E6 !important;
+}
+button:active {
+  background-color: #1449CC !important;
+  transform: scale(0.98);
 }
 
 a {
@@ -69,6 +72,10 @@ nav .logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.1s ease-in-out;
+}
+nav .logo:active {
+  transform: scale(0.98);
 }
 nav .menu-cta {
   display: flex;
