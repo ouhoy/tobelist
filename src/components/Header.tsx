@@ -1,10 +1,10 @@
-import laptopBoy from "../assets/images/3d man.svg"
+import laptopBoy from "../assets/images/3d man2.svg"
 
 export default function Header() {
 
     return <header>
         <div className="header-content">
-            <h1>Forget your todo list<br/>Create your tobe list</h1>
+            <h1>Forget your todolist<br/>Create your tobelist</h1>
             <p>
                 Tobelist is the ultimate form of boosting productivity. Unlike many
                 other tools out there, this one can incorporate multiple methods.

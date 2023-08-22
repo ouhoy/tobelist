@@ -136,36 +136,10 @@ header .header-content {
   gap: 24px;
 }
 header h1 {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 600;
-  font-size: 64px;
-  line-height: 77px;
+  font-size: 52px;
+  line-height: 64px;
   text-align: left;
-}
-header button {
-  background: #195bff;
-  border-radius: 32px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  width: 328px;
-}
-header p {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 32px;
-  width: 624px;
-  /* or 178% */
-  /* Gray/Dark :hover */
-  color: #313234;
 }
 header > p {
   display: flex;
@@ -174,6 +148,24 @@ header > p {
   padding: 0;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+header button {
+  background: #195bff;
+  border-radius: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 328px;
+}
+header p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  width: 512px;
+  color: #313234;
 }
 header .numbers {
   width: 400px;
