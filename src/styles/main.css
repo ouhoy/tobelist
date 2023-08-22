@@ -114,4 +114,99 @@ nav .menu-cta .cta button {
   border-radius: 32px;
 }
 
+header {
+  max-width: 1280px;
+  margin-top: 56px;
+  margin-bottom: 112px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  width: 456.38px;
+  height: 482.5px;
+}
+header .header-content {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+}
+header h1 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: left;
+}
+header button {
+  background: #195bff;
+  border-radius: 32px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 328px;
+}
+header p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  width: 624px;
+  /* or 178% */
+  /* Gray/Dark :hover */
+  color: #313234;
+}
+header > p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+header .numbers {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+header .numbers .num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .numbers .num h4 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 38px;
+  /* identical to box height */
+  text-align: center;
+  /* Gray/Dark :hover */
+  color: #313234;
+  margin-bottom: 8px;
+}
+header .numbers .num p {
+  width: 100%;
+  font-weight: 500;
+  font-size: 13.33px;
+  line-height: 16px;
+  text-align: center;
+  color: #444649;
+}
+
 /*# sourceMappingURL=main.css.map */

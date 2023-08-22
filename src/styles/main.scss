@@ -147,3 +147,112 @@ nav {
 
 }
 
+header {
+  max-width: $med-max-width;
+  margin-top: 56px;
+  margin-bottom: 112px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 456.38px;
+    height: 482.5px;
+  }
+
+  .header-content {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: left;
+  }
+
+  button {
+    background: #195bff;
+    border-radius: 32px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 328px;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    width: 624px;
+    /* or 178% */
+    /* Gray/Dark :hover */
+
+    color: $body-gray;
+  }
+
+  > p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .numbers {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+
+    .num {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h4 {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 38px;
+        /* identical to box height */
+
+        text-align: center;
+
+        /* Gray/Dark :hover */
+
+        color: $body-gray;
+        margin-bottom: 8px;
+      }
+
+      p {
+        width: 100%;
+        font-weight: 500;
+        font-size: 13.33px;
+        line-height: 16px;
+        text-align: center;
+        color: #444649;
+      }
+    }
+  }
+}
