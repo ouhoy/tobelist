@@ -7,6 +7,7 @@
 body {
   font-family: "Inter", sans-serif;
   color: #252525;
+  overflow-x: hidden;
 }
 
 .hide-for-desktop {
@@ -37,6 +38,16 @@ button:hover {
 button:active {
   background-color: #1449CC !important;
   transform: scale(0.98);
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.04em;
 }
 
 a {
@@ -203,6 +214,82 @@ header .numbers .num p {
   line-height: 16px;
   text-align: center;
   color: #444649;
+}
+
+.color1 {
+  background: linear-gradient(-45deg, #C1E9FF, #F4F5F6, #E1FCFF, #BDE7FF);
+}
+
+.color2 {
+  background: linear-gradient(-45deg, #ECEAFB, #ECF7FC, #F0EDFE, #E9E8FB);
+}
+
+.color3 {
+  background: linear-gradient(135deg, #F0FAFF 5.66%, #E8EFFF 100%);
+}
+
+.background-animation {
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main h2 {
+  color: #151617;
+}
+main .explore,
+main .reviews {
+  width: 100vw;
+  overflow: hidden;
+}
+main .explore-section {
+  padding-top: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+main .explore-section h2 {
+  margin-bottom: 16px;
+}
+main .explore-section p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 175%;
+  text-align: center;
+  color: #313234;
+  margin: 0 auto 64px;
+}
+main .explore-section img {
+  width: 1440px;
+  height: 455px;
+  margin: 0 auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
