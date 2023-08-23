@@ -116,7 +116,7 @@ nav .menu-cta .cta button {
 
 header {
   max-width: 1280px;
-  margin-top: 56px;
+  margin-top: 72px;
   margin-bottom: 112px;
   display: flex;
   flex-direction: row;
@@ -124,8 +124,12 @@ header {
   justify-content: space-between;
 }
 header img {
-  width: 456.38px;
-  height: 482.5px;
+  width: 512px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+header img:active {
+  transform: scale(0.99);
 }
 header .header-content {
   margin: 0;

@@ -149,7 +149,7 @@ nav {
 
 header {
   max-width: $med-max-width;
-  margin-top: 56px;
+  margin-top: 72px;
   margin-bottom: 112px;
   display: flex;
   flex-direction: row;
@@ -157,8 +157,13 @@ header {
   justify-content: space-between;
 
   img {
-    width: 456.38px;
-    height: 482.5px;
+    width: 512px;
+    transition: $main-transition;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.99);
+    }
   }
 
   .header-content {
