@@ -268,7 +268,7 @@ header {
 
 
 .color1 {
-  background: linear-gradient(-45deg, #C1E9FF, #F4F5F6, #E1FCFF, #BDE7FF);
+  background: linear-gradient(-45deg, rgba(193, 233, 255, 0.24), #F4F5F6, #E1FCFF, rgba(189, 231, 255, 0.53));
 }
 
 .color2 {
@@ -276,8 +276,13 @@ header {
 }
 
 .color3 {
-  background: linear-gradient(135deg, #F0FAFF 5.66%, #E8EFFF 100%);
+  background: linear-gradient(135deg, #c2ebff 5.66%, #E8EFFF 100%);
 }
+
+.color4 {
+  background: linear-gradient(135deg, rgba(103, 207, 255, 0.1) 5.66%, rgba(25, 91, 255, 0.1) 100%);
+}
+
 
 .background-animation {
   background-size: 400% 400%;
@@ -311,33 +316,90 @@ main {
   }
 
   .explore-section {
+    width: 100%;
+    height: 704px;
     padding-top: 96px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
 
     h2 {
       margin-bottom: 16px;
     }
 
     p {
-      font-family: "Inter", sans-serif;
-      font-style: normal;
       font-weight: 500;
-      font-size: 18px;
-      line-height: 175%;
+      font-size: 16px;
+      line-height: 24px;
       text-align: center;
       color: #313234;
-      margin: 0 auto 64px;
+      margin: 0 auto 48px;
     }
 
     img {
-      width: 1440px;
-      height: 455px;
       margin: 0 auto;
 
-      filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.10));
+      //filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.10));
+    }
+  }
+
+  .demo-section {
+    margin: 136px auto;
+
+    .title-description {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      max-width: 1280px;
+
+      h3 {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 24px;
+        letter-spacing: -0.04em;
+        color: #252525;
+
+        span {
+          color: $primary;
+        }
+      }
+
+      p {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $body-gray;
+        max-width: 516px;
+      }
+    }
+
+    .video-container {
+      position: relative;
+
+      .play-button {
+        width: 64px;
+        height: 64px;
+        border-radius: 64px;
+
+        position: absolute;
+        right: 50%;
+        top: 50%;
+
+        cursor: pointer;
+        transition: $main-transition;
+
+        &:active {
+          transform: scale(.92);
+        }
+      }
+
+      overflow: hidden;
+      margin-top: 56px;
     }
   }
 }

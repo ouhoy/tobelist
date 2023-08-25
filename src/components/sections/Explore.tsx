@@ -3,7 +3,7 @@ import tobelistPreview from "../../assets/images/App Preview.png"
 
 export default function Explore() {
     return <section className="explore">
-        <div className="explore-section background-animation color2">
+        <div className="explore-section  background-animation color4">
             <h2>Make your life more efficient</h2>
             <p>
                 Tobelist is the ultimate form of boosting productivity. Unlike many
