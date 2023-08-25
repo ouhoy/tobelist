@@ -1,4 +1,4 @@
-import tobelistPreview from "../../assets/images/App Preview.png"
+import tobelistPreview from "../../assets/images/App Preview.svg"
 
 
 export default function Explore() {

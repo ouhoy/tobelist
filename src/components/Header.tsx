@@ -4,7 +4,7 @@ export default function Header() {
 
     return <header>
         <div className="header-content">
-            <h1>Forget your todolist<br/>Create your tobelist</h1>
+            <h1>Forget your Todolist<br/>Create your Tobelist</h1>
             <p>
                 Tobelist is the ultimate form of boosting productivity. Unlike many
                 other tools out there, this one can incorporate multiple methods.

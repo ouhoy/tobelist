@@ -152,7 +152,7 @@ header .header-content {
 }
 header h1 {
   font-weight: 600;
-  font-size: 52px;
+  font-size: 56px;
   line-height: 64px;
   text-align: left;
 }
@@ -268,6 +268,7 @@ main .explore-section {
 }
 main .explore-section h2 {
   margin-bottom: 16px;
+  font-weight: 600;
 }
 main .explore-section p {
   font-weight: 500;
@@ -291,11 +292,9 @@ main .demo-section .title-description {
   max-width: 1280px;
 }
 main .demo-section .title-description h3 {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 40px;
   line-height: 24px;
+  font-weight: 500;
   letter-spacing: -0.04em;
   color: #252525;
 }
@@ -328,6 +327,73 @@ main .demo-section .video-container .play-button {
 }
 main .demo-section .video-container .play-button:active {
   transform: scale(0.92);
+}
+main .cta-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 88px 112px;
+  border-radius: 16px;
+  max-width: 1280px;
+}
+main .cta-section h4 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  color: #151617;
+  max-width: 414px;
+}
+main .cta-section h4 span {
+  color: #195bff;
+}
+main .cta-section p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #313234;
+  max-width: 405px;
+}
+main .cta-section a {
+  transition: all 0.1s ease-in-out;
+}
+main .cta-section a:active {
+  transform: scale(0.96);
+}
+main .devices-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 152px 0;
+}
+main .devices-section h4 {
+  max-width: 304px;
+  max-height: 80px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  color: #252525;
+  margin-bottom: 24px;
+}
+main .devices-section h4 span {
+  color: #195bff;
+}
+main .devices-section p {
+  width: 405px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #313234;
 }
 
 @keyframes gradient {

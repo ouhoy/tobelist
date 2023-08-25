@@ -57,6 +57,11 @@ button {
     background-color: $primary-active !important;
     transform: scale(0.98);
   }
+
+  //&:focus {
+  //  outline: 4px solid $body-gray;
+  //  outline-offset: 2px;
+  //}
 }
 
 h2 {
@@ -189,7 +194,7 @@ header {
 
   h1 {
     font-weight: 600;
-    font-size: 52px;
+    font-size: 56px;
     line-height: 64px;
     text-align: left;
   }
@@ -325,6 +330,7 @@ main {
 
     h2 {
       margin-bottom: 16px;
+      font-weight: 600;
     }
 
     p {
@@ -354,11 +360,10 @@ main {
       max-width: 1280px;
 
       h3 {
-        font-family: "Inter", sans-serif;
-        font-style: normal;
-        font-weight: 500;
+
         font-size: 40px;
         line-height: 24px;
+        font-weight: 500;
         letter-spacing: -0.04em;
         color: #252525;
 
@@ -402,6 +407,89 @@ main {
       margin-top: 56px;
     }
   }
+
+  .cta-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 88px 112px;
+    border-radius: 16px;
+    max-width: $med-max-width;
+
+    h4 {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.04em;
+      color: #151617;
+      max-width: 414px;
+
+      span {
+        color: #195bff;
+      }
+    }
+
+    p {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $body-gray;
+      max-width: 405px;
+    }
+
+    a {
+      transition: $main-transition;
+
+      &:active {
+        transform: scale(.96);
+      }
+    }
+
+  }
+
+
+  .devices-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 152px 0;
+
+    h4 {
+      max-width: 304px;
+      max-height: 80px;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.04em;
+      color: $dark;
+      margin-bottom: 24px;
+
+      span {
+        color: $primary;
+      }
+    }
+
+    p {
+      width: 405px;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      color: $body-gray;
+    }
+
+
+  }
+
+
 }
 
 @keyframes gradient {
