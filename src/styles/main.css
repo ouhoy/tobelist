@@ -253,12 +253,14 @@ main section {
 main h2 {
   color: #151617;
 }
-main .explore,
-main .reviews {
+
+.explore,
+.reviews {
   width: 100vw;
   overflow: hidden;
 }
-main .explore-section {
+
+.explore-section {
   width: 100%;
   height: 704px;
   padding-top: 96px;
@@ -266,11 +268,11 @@ main .explore-section {
   flex-direction: column;
   justify-content: center;
 }
-main .explore-section h2 {
+.explore-section h2 {
   margin-bottom: 16px;
   font-weight: 600;
 }
-main .explore-section p {
+.explore-section p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -278,30 +280,31 @@ main .explore-section p {
   color: #313234;
   margin: 0 auto 48px;
 }
-main .explore-section img {
+.explore-section img {
   margin: 0 auto;
 }
-main .demo-section {
+
+.demo-section {
   margin: 136px auto;
 }
-main .demo-section .title-description {
+.demo-section .title-description {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   max-width: 1280px;
 }
-main .demo-section .title-description h3 {
+.demo-section .title-description h3 {
   font-size: 40px;
   line-height: 24px;
   font-weight: 500;
   letter-spacing: -0.04em;
   color: #252525;
 }
-main .demo-section .title-description h3 span {
+.demo-section .title-description h3 span {
   color: #195bff;
 }
-main .demo-section .title-description p {
+.demo-section .title-description p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -310,12 +313,12 @@ main .demo-section .title-description p {
   color: #313234;
   max-width: 516px;
 }
-main .demo-section .video-container {
+.demo-section .video-container {
   position: relative;
   overflow: hidden;
   margin-top: 56px;
 }
-main .demo-section .video-container .play-button {
+.demo-section .video-container .play-button {
   width: 64px;
   height: 64px;
   border-radius: 64px;
@@ -325,10 +328,11 @@ main .demo-section .video-container .play-button {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
-main .demo-section .video-container .play-button:active {
+.demo-section .video-container .play-button:active {
   transform: scale(0.92);
 }
-main .cta-section {
+
+.cta-section {
   width: 100%;
   display: flex;
   align-items: center;
@@ -337,7 +341,7 @@ main .cta-section {
   border-radius: 16px;
   max-width: 1280px;
 }
-main .cta-section h4 {
+.cta-section h4 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -347,10 +351,10 @@ main .cta-section h4 {
   color: #151617;
   max-width: 414px;
 }
-main .cta-section h4 span {
+.cta-section h4 span {
   color: #195bff;
 }
-main .cta-section p {
+.cta-section p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -359,19 +363,20 @@ main .cta-section p {
   color: #313234;
   max-width: 405px;
 }
-main .cta-section a {
+.cta-section a {
   transition: all 0.1s ease-in-out;
 }
-main .cta-section a:active {
+.cta-section a:active {
   transform: scale(0.96);
 }
-main .devices-section {
+
+.devices-section {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 152px 0;
 }
-main .devices-section h4 {
+.devices-section h4 {
   max-width: 304px;
   max-height: 80px;
   font-weight: 500;
@@ -381,10 +386,10 @@ main .devices-section h4 {
   color: #252525;
   margin-bottom: 24px;
 }
-main .devices-section h4 span {
+.devices-section h4 span {
   color: #195bff;
 }
-main .devices-section p {
+.devices-section p {
   width: 405px;
   font-family: "Inter", sans-serif;
   font-style: normal;
