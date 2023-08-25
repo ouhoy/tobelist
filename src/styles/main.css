@@ -401,6 +401,110 @@ main h2 {
   color: #313234;
 }
 
+.faqs-container {
+  width: 100%;
+  margin: 136px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faqs-container h2 {
+  color: #252525;
+  margin-bottom: 24px;
+}
+.faqs-container p {
+  margin-bottom: 58px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #313234;
+  text-align: center;
+}
+.faqs-container a {
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+}
+.faqs-container a:hover {
+  font-style: italic;
+}
+.faqs-container > p {
+  font-size: 18px;
+}
+
+.faqs {
+  width: 95%;
+  max-width: 890px;
+  margin: 0 auto;
+}
+.faqs .question-border-wrap {
+  cursor: pointer;
+  padding: 2px 3px;
+}
+.faqs .question-border-wrap:not(:last-child) {
+  margin-bottom: 24px;
+}
+.faqs .show-question {
+  height: calc(0% + 50px) !important;
+}
+.faqs .rotate-line {
+  transform: rotate(90deg) !important;
+}
+.faqs .question-container {
+  height: 64px;
+  overflow: hidden;
+  background: #fcfcfc;
+  outline: 1px solid #E0E0E0;
+  border-radius: 8px;
+}
+.faqs .question-container .faqs-text {
+  font-size: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  color: #505050 !important;
+  margin: 0 16px;
+  line-height: 175%;
+  text-align: left;
+}
+.faqs .question-container p {
+  color: #353535;
+  text-align: left;
+  margin: 0 16px 16px;
+  padding-bottom: 16px;
+}
+.faqs .question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.faqs .question p {
+  margin: 16px;
+  font-size: 18px;
+  padding-bottom: 0;
+  color: black;
+}
+.faqs .question .plus {
+  position: relative;
+  cursor: pointer;
+  margin-right: 24px;
+  width: 16px;
+  height: 16px;
+}
+.faqs .question .plus .line {
+  background-color: #195bff;
+  position: absolute;
+  right: 7px;
+  width: 3px;
+  height: 16px;
+  border-radius: 3px;
+  transition: 200ms ease-in-out;
+}
+.faqs .question .plus .line:first-of-type {
+  right: 7px;
+  transform: rotate(90deg);
+}
+
 @keyframes gradient {
   0% {
     background-position: 0 50%;

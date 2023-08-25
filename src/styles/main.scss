@@ -490,6 +490,128 @@ main {
 
 }
 
+.faqs-container {
+  width: 100%;
+  margin: 136px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    color: #252525;
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 58px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #313234;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      font-style: italic;
+    }
+  }
+
+  > p {
+    font-size: 18px;
+  }
+}
+
+.faqs {
+  width: 95%;
+  max-width: 890px;
+  margin: 0 auto;
+
+  .question-border-wrap {
+    cursor: pointer;
+    padding: 2px 3px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .show-question {
+    height: calc(0% + 50px) !important;
+  }
+
+  .rotate-line {
+    transform: rotate(90deg) !important;
+  }
+
+  .question-container {
+    height: 64px;
+    overflow: hidden;
+    background: #fcfcfc;
+    outline: 1px solid #E0E0E0;
+    border-radius: 8px;
+
+
+    .faqs-text {
+      font-size: 16px;
+      padding-left: 16px;
+      padding-bottom: 16px;
+      color: #505050 !important;
+      margin: 0 16px;
+      line-height: 175%;
+      text-align: left;
+
+    }
+
+    p {
+      color: #353535;
+      text-align: left;
+      margin: 0 16px 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+
+    p {
+      margin: 16px;
+      font-size: 18px;
+      padding-bottom: 0;
+      color: black;
+    }
+
+    .plus {
+      position: relative;
+      cursor: pointer;
+      margin-right: 24px;
+      width: 16px;
+      height: 16px;
+
+      .line {
+        background-color: $primary;
+        position: absolute;
+        right: 7px;
+        width: 3px;
+        height: 16px;
+        border-radius: 3px;
+        transition: 200ms ease-in-out;
+
+        &:first-of-type {
+          right: 7px;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
 
 @keyframes gradient {
   0% {
