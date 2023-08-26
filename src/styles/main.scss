@@ -632,8 +632,7 @@ footer {
       margin-top: 16px;
       max-width: $mobile-max-width;
       text-align: center;
-      font-family: "Inter", sans-serif;
-      font-style: normal;
+      font-weight: 500;
       line-height: 175%;
       /* or 32px */
 
@@ -718,27 +717,29 @@ footer {
     justify-content: center;
 
     .additional-links {
-      width: $mobile-max-width;
+      width: 100%;
       max-width: $med-max-width;
       border-top: 1px solid #313234;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       padding-top: 11px;
 
       p {
         font-size: 10px;
-        color: #313234;
+        color: $body-02;
+        font-weight: 500;
       }
 
       a {
         font-size: 10px;
-        color: #313234;
+        font-weight: 500;
+        color: $body-02;
         transition: all 0.3s ease-in-out;
 
         &:hover {
-          color: #eeeeee;
+          color: #565656;
           text-decoration: underline;
         }
       }
@@ -755,36 +756,36 @@ footer {
     align-items: center;
     justify-content: center;
     height: 68px;
-    width: $mobile-max-width;
+    width: 405px;
   }
 
   input {
     position: absolute;
     padding-left: 24px;
-    width: $mobile-max-width;
-    height: 64px;
-    border: 2px solid #c4c4c4;
+    width: 405px;
+    height: 56px;
+    border: 2px solid $body-gray;
     box-sizing: border-box;
     border-radius: $border-radius;
     background: none;
     transition: 0.2s ease-in-out;
-    color: rgb(255, 255, 255);
+    color: $body-02;
 
     &:focus {
-      outline: 1px #fcfcfc;
-      border: 2px solid #fcfcfc;
+      outline: 1px #464646;
+      border: 2px solid #464646;
     }
   }
 
   button {
     position: absolute;
-    right: 4%;
+    right: 2%;
     font-weight: 500;
     font-size: 16px;
     line-height: 175%;
     padding: 16px 40px;
     width: 112px;
-    height: 48px;
+    height: 40px;
     background: $primary;
     // width: 96%;
     transition: 0.5s ease;
@@ -810,7 +811,7 @@ footer {
       margin: 0 auto;
 
       .additional-links {
-        width: $mobile-max-width;
+        width: $med-max-width;
         border-top: 1px solid #313234;
         display: flex;
         flex-direction: row;
@@ -832,7 +833,7 @@ footer {
 
     form,
     input {
-      width: 405px;
+      width: 405px !important;
     }
 
     button {
