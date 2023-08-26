@@ -4,6 +4,7 @@ import Header from "./Header.tsx";
 import Main from "./Main.tsx";
 import Faq from "./Faq.tsx";
 import {faqs} from "../model/homePageData.ts";
+import Footer from "./Footer";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
             <Header/>
             <Main/>
             <Faq faqs={faqs}/>
+            <Footer/>
 
         </div>
     )
