@@ -25,7 +25,7 @@ export default function Footer() {
                     <a href="#">Join us</a>
                 </div>
                 <div className={"help"}>
-                    <p>Help</p>
+                    <p>Welp</p>
                     <a href="#">Talk to support</a>
                     <a href="#">FAQ</a>
                     <a href="#">Security</a>
