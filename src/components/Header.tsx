@@ -1,4 +1,4 @@
-import laptopBoy from "../assets/images/3d man2.svg"
+import laptopBoy from "../assets/images/3d-man2.webp"
 
 export default function Header() {
 

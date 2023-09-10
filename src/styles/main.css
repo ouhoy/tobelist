@@ -75,7 +75,7 @@ nav {
   width: 100%;
   max-width: 1280px;
 }
-nav img {
+nav img, nav svg {
   cursor: pointer;
 }
 nav .logo {
@@ -134,12 +134,12 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-header img {
+header img, header svg {
   width: 512px;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
-header img:active {
+header img:active, header svg:active {
   transform: scale(0.99);
 }
 header .header-content {
@@ -280,7 +280,7 @@ main h2 {
   color: #313234;
   margin: 0 auto 48px;
 }
-.explore-section img {
+.explore-section img, .explore-section svg {
   margin: 0 auto;
 }
 
