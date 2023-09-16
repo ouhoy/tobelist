@@ -138,6 +138,7 @@ header img, header svg {
   width: 512px;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
+  animation: floating 6s infinite ease-in-out;
 }
 header img:active, header svg:active {
   transform: scale(0.99);
@@ -746,6 +747,17 @@ footer .footer-link .team {
   }
   100% {
     background-position: 0 50%;
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
