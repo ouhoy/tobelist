@@ -1,4 +1,5 @@
 import laptopBoy from "../assets/images/3d-man2.webp"
+import {data, Medal} from "../model/medals.ts";
 
 export default function Header() {
 
@@ -10,7 +11,7 @@ export default function Header() {
                 other tools out there, this one can incorporate multiple methods.
             </p>
             <button>Create my tobelist -free</button>
-            <Numbers></Numbers>
+            <Medals data={data}/>
         </div>
         <img
             src={laptopBoy}
@@ -22,19 +23,19 @@ export default function Header() {
 
 }
 
-function Numbers() {
+function Medals({data}: { data: Medal[] }) {
     return <div className={"numbers"}>
-        <NumberCounter counter={30} description={"users trust us"} symbol={"+"}></NumberCounter>
-        <NumberCounter counter={900} description={"completed tasks"} symbol={"+"}></NumberCounter>
-        <NumberCounter counter={100} description={"for productivity"} symbol={"%"}></NumberCounter>
+        {data.map((result: Medal) => <NumberCounter medal={result.medal} description={result.description}
+                                                    symbol={result.symbol}></NumberCounter>)}
+
     </div>
 }
 
-function NumberCounter({counter, description, symbol}: { counter: number, description: string, symbol: string }) {
-    
+function NumberCounter({medal, description, symbol}: { medal: number, description: string, symbol: string }) {
+
 
     return <div className={"num"}>
-        <h4>{counter < 100 ? `0${counter}` : counter}{symbol}</h4>
+        <h4>{medal < 100 ? `0${medal}` : medal}{symbol}</h4>
         <p>{description}</p>
     </div>
 }
