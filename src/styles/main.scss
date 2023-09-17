@@ -647,7 +647,7 @@ footer {
     align-items: center;
     max-width: $mobile-max-width;
     margin: 56px auto;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     .team {
       margin: 0;

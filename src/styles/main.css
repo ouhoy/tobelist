@@ -532,7 +532,7 @@ footer .footer-link {
   align-items: center;
   max-width: 95%;
   margin: 56px auto;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 footer .footer-link .team {
   margin: 0;
