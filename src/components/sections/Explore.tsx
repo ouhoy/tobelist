@@ -10,7 +10,7 @@ export default function Explore() {
                 other <br/>
                 tools out there, this one can incorporate multiple methods.
             </p>
-            <img
+            <img loading={"lazy"}
                 src={tobelistPreview}
                 className="section"
                 alt="tobelist web app"

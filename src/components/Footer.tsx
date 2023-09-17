@@ -6,7 +6,7 @@ export default function Footer() {
     return <footer>
         <div className={"footer-container"}>
             <div className={"tobelist"}>
-                <img src={footerLogo} alt="tobelist footer logo"/>
+                <img loading={"lazy"} src={footerLogo} alt="tobelist footer logo"/>
                 <p>
                     Tobelist is the ultimate form of boosting productivity. Unlike many
                     other tools out there, this one can incorporate multiple methods.

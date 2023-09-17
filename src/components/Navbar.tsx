@@ -5,7 +5,7 @@ export default function Navbar() {
     return <div className={"container"}>
         <div className={"nav-container"}>
             <nav>
-                <img
+                <img loading={"lazy"}
                     src={menu}
                     className="hide-for-desktop hamburger-menu"
                     alt="menu"

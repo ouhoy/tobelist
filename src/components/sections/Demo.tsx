@@ -12,7 +12,7 @@ export default function Demo() {
             </p>
         </div>
         <div className="video-container">
-            <img src={playButton} className={"play-button"} alt={"play button"}/>
+            <img loading={"lazy"} src={playButton} className={"play-button"} alt={"play button"}/>
             <img
                 src={videoBackground}
                 alt="Workspace, image by Vero Photoart"
