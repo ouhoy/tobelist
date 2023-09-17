@@ -178,6 +178,7 @@ header {
     cursor: pointer;
     animation: floating 6s infinite ease-in-out;
 
+
     &:active {
       transform: scale(0.99);
     }
@@ -421,7 +422,6 @@ main {
   padding: 88px 112px;
   border-radius: 16px;
   max-width: $med-max-width;
-  box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.20);
 
   h4 {
     font-family: "Inter", sans-serif;
