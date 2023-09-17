@@ -176,7 +176,6 @@ header {
     width: 512px;
     transition: $main-transition;
     cursor: pointer;
-    animation: floating 6s infinite ease-in-out;
 
 
     &:active {
@@ -910,19 +909,3 @@ footer {
   }
 }
 
-@keyframes floating {
-
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {    transform: translateY(0)}
-
-
-
-
-
-}
