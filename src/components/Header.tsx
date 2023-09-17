@@ -13,12 +13,15 @@ export default function Header() {
             <button>Create my tobelist -free</button>
             <Medals data={data}/>
         </div>
+        <picture>
+            <source type={"image/webp"} />
         <img loading={"lazy"}
             src={laptopBoy}
             alt="tobelist man 3d character"
             className="hide-for-tablet hide-for-mobile"
 
         />
+        </picture>
     </header>
 
 }

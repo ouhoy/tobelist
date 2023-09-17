@@ -281,7 +281,7 @@ main h2 {
   color: #313234;
   margin: 0 auto 48px;
 }
-.explore-section img, .explore-section svg {
+.explore-section picture, .explore-section img, .explore-section svg {
   margin: 0 auto;
 }
 
