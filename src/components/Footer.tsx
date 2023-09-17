@@ -48,7 +48,7 @@ export default function Footer() {
         <div className={"footer-end"}>
             <div className={"additional-links"}>
                 <p>© 2023 Tobelist. All rights reserved.</p>
-                <p><a href="#">@Ouhoy</a></p>
+                <p><a href="https://www.instagram.com/ouhoy/" target={"_blank"}>Made with ❤️‍🔥 by @Ouhoy</a></p>
                 <div>
                     <a href="#">Terms and Conditions</a>
                     <a href="#">Privacy policy</a>
