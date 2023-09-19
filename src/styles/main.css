@@ -232,11 +232,6 @@ header .numbers .num p {
   background: linear-gradient(-45deg, rgb(228, 239, 255), #F4F5F6, rgba(225, 240, 255, 0.67), rgb(229, 241, 255));
 }
 
-.background-animation {
-  background-size: 400% 400%;
-  animation: gradient 8s ease infinite;
-}
-
 main {
   display: flex;
   flex-direction: column;
