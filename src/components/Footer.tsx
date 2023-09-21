@@ -54,7 +54,8 @@ function FooterInfoLink({title, className, links}: { title: string, className: s
     return <div className={className}>
 
         <p>{title}</p>
-        {links.map((results: FooterLink) => <a href={results.href}>{results.title}</a>)}
+        {links.map((results: FooterLink) => <a className={results.title === "Status" ? "status" : ""}
+                                               href={results.href}>{results.title}</a>)}
     </div>
 
 }
