@@ -434,6 +434,7 @@ main {
 
     span {
       color: #195bff;
+      background: none;
     }
   }
 
@@ -459,9 +460,10 @@ main {
 
 
 .devices-section {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 152px 0;
 
   h4 {

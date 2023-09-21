@@ -348,6 +348,7 @@ main h2 {
 }
 .cta-section h4 span {
   color: #195bff;
+  background: none;
 }
 .cta-section p {
   font-family: "Inter", sans-serif;
@@ -366,9 +367,10 @@ main h2 {
 }
 
 .devices-section {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 152px 0;
 }
 .devices-section h4 {
