@@ -757,5 +757,8 @@ footer .footer-link .team {
     background-position: 0 50%;
   }
 }
+::selection {
+  background: #ffedc1;
+}
 
 /*# sourceMappingURL=main.css.map */
