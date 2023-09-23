@@ -9,16 +9,20 @@ import Footer from "./Footer";
 function App() {
 
 
-
     return (
-        <div className={"container"}>
-            <Navbar/>
-            <Header/>
-            <Main/>
-            <Faq faqs={faqs}/>
-            <Footer/>
+        <>
+            <div className={"construction-warning"}>Tobelist in maintenance mode  ⚙️️</div>
 
-        </div>
+            <div className={"container"}>
+                <Navbar/>
+                <Header/>
+                <Main/>
+                <Faq faqs={faqs}/>
+                <Footer/>
+
+            </div>
+
+        </>
     )
 }
 

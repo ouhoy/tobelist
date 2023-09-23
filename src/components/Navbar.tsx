@@ -1,6 +1,7 @@
 import logo from "../assets/images/logo.svg"
 import menu from "../assets/images/menu.svg"
 
+
 export default function Navbar() {
     return <div className={"container"}>
         <div className={"nav-container"}>
