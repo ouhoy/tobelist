@@ -82,7 +82,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: $med-max-width;
 }
 
 .nav-container {
@@ -362,7 +362,7 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    max-width: 1280px;
+    max-width: $med-max-width;
 
     h3 {
 
@@ -678,7 +678,6 @@ footer {
         position: absolute;
 
 
-
       }
     }
 
@@ -870,7 +869,7 @@ footer {
   padding-bottom: 48px;
 
   .footer-container {
-    max-width: 1280px;
+    max-width: $med-max-width;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -932,4 +931,76 @@ footer {
 
 ::selection {
   background: #ffedc1;
+}
+
+@media (max-width: 1300px) {
+  $lg-width: 1024px;
+  .container {
+    max-width: $lg-width;
+
+  }
+  header {
+    max-width: $lg-width;
+    margin: 72px auto 112px auto;
+
+    img {
+      width: 450px;
+    }
+  }
+
+  .explore-section {
+    height: auto !important;
+
+    img {
+      width: 100%;
+
+      max-width: $lg-width;
+    }
+  }
+
+  .demo-section {
+    .title-description {
+      h3 {
+        font-size: 32px;
+        line-height: 24px;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: $lg-width;
+    }
+  }
+
+  .cta-section {
+    h4 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .devices-section {
+    max-width: $lg-width;
+
+
+    img {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+
+  footer {
+    .footer-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-content: center;
+      align-items: center;
+    }
+  
+  }
 }

@@ -761,4 +761,53 @@ footer .footer-link .team {
   background: #ffedc1;
 }
 
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1024px;
+  }
+  header {
+    max-width: 1024px;
+    margin: 72px auto 112px auto;
+  }
+  header img {
+    width: 450px;
+  }
+  .explore-section {
+    height: auto !important;
+  }
+  .explore-section img {
+    width: 100%;
+    max-width: 1024px;
+  }
+  .demo-section .title-description h3 {
+    font-size: 32px;
+    line-height: 24px;
+  }
+  .demo-section img {
+    width: 100%;
+    max-width: 1024px;
+  }
+  .cta-section h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .cta-section p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .devices-section {
+    max-width: 1024px;
+  }
+  .devices-section img {
+    width: 100%;
+    max-width: 600px;
+  }
+  footer .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    align-items: center;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
